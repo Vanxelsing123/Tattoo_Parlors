@@ -118,6 +118,65 @@ svg {
 
 .header__li:hover {
 	color: var(--color-black);
+	text-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28;
+	box-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28, 0 0 80px #e5bc28;
+	transform: scale(1.05);
+}
+
+.neon__text {
+	font-family: 'Inter';
+	font-size: 130px;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--color-white);
+	text-shadow: 0 0 10px #d538e1, 0 0 20px #d538e1, 0 0 40px #d538e1;
+
+	/* Первая анимация: мигание */
+	animation: flicker 2s ease-in-out 3, steady 1s forwards;
+	animation-delay: 0s, 0.7s; /* steady стартует после flicker */
+}
+
+@keyframes flicker {
+	0% {
+		opacity: 1;
+		text-shadow: 0 0 10px #d538e1, 0 0 20px #d538e1, 0 0 40px #d538e1;
+	}
+	15% {
+		opacity: 0.3;
+		text-shadow: none;
+	}
+	30% {
+		opacity: 1;
+		text-shadow: 0 0 10px #d538e1, 0 0 20px #d538e1, 0 0 40px #d538e1;
+	}
+	45% {
+		opacity: 0.5;
+		text-shadow: none;
+	}
+	60% {
+		opacity: 1;
+		text-shadow: 0 0 10px #d538e1, 0 0 20px #d538e1, 0 0 40px #d538e1;
+	}
+	75% {
+		opacity: 0.2;
+		text-shadow: none;
+	}
+	100% {
+		opacity: 0.9;
+		text-shadow: 0 0 10px #d538e1, 0 0 20px #d538e1, 0 0 40px #d538e1;
+	}
+}
+
+@keyframes steady {
+	from {
+		opacity: 0.9;
+		text-shadow: none;
+	}
+	to {
+		opacity: 1;
+		text-shadow: 0 0 10px #d538e1, 0 0 20px #d538e1, 0 0 40px #d538e1, 0 0 80px #d538e1,
+			0 0 160px #d538e1;
+	}
 }
 
 /* studio */
@@ -140,7 +199,7 @@ svg {
 	line-height: 98%;
 	text-transform: uppercase;
 	color: var(--color-black);
-	background-image: url('icons/fon_text.svg');
+	background-image: url('../icons/fon_text.svg');
 	background-repeat: no-repeat;
 	height: 100px;
 	max-width: 400px;
@@ -178,6 +237,7 @@ svg {
 }
 
 .studio__btn {
+	cursor: pointer;
 	margin-top: 40px;
 	border-radius: 68px;
 	background-color: var(--color-yellow);
@@ -190,6 +250,14 @@ svg {
 	text-align: center;
 	color: #171717;
 	border: none;
+	transition: all 0.3s ease;
+}
+
+.studio__btn:hover {
+	color: #111;
+	text-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28;
+	box-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28, 0 0 80px #e5bc28;
+	transform: scale(1.05);
 }
 
 /* master */
