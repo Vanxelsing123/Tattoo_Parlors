@@ -61,7 +61,7 @@ svg {
 	--color-white: #ffffff;
 	--color-black: #171717;
 	--main-font: 'Inter', sans-serif;
-	--main-font: 'Neusa', sans-serif;
+	--text-font: 'Neusa', sans-serif;
 }
 
 /* header */
@@ -263,15 +263,41 @@ svg {
 /* master */
 
 .master {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: auto;
+	margin-bottom: 90px;
 }
 
-.content__master {
+.master__text {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.text__master {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 190%;
+	text-align: center;
+	color: var(--color-white);
+	max-width: 618px;
+}
+
+.content__master {
+	position: relative;
+	background-image: url('../icons/fon_master.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center 100px;
+}
+
+.master__anvil {
+	position: absolute;
+	bottom: -242px;
+	right: 91px;
+}
+
+.portfolio__master {
+	padding: 0 250px 170px 200px;
 }
 
 .title__master {
@@ -287,4 +313,105 @@ svg {
 	max-width: 270px;
 	padding: 25px 20px 17px 24px;
 	text-align: center;
+}
+
+.master__item {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: stretch;
+	width: 850px;
+}
+
+.master__li {
+	position: relative;
+}
+
+.gradient {
+	position: absolute;
+	bottom: 173px;
+	left: 0;
+	width: 100%;
+	height: 30%;
+	background: linear-gradient(180deg, rgba(229, 188, 40, 0) 0%, #e5bc28 100%);
+}
+
+.master__li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+	text-align: center;
+	height: 100%;
+}
+
+.master__li img {
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+	object-position: center 40px;
+	display: block;
+}
+
+.master__li p {
+	margin: 10px 0 5px;
+}
+
+.master__li button {
+	margin-top: 30px;
+	padding: 12px 60px;
+	cursor: pointer;
+	font-size: 11px;
+	color: var(--color-white);
+	border-radius: 68px;
+	background-color: var(--color-black);
+	border: none;
+	font-family: 'Inter';
+}
+
+.master__name {
+	font-family: 'Neusa';
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 98%;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--color-black);
+}
+
+.text__tatu {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 190%;
+	text-align: center;
+	color: var(--color-black);
+}
+
+.master__svg {
+	position: relative;
+}
+
+.svg__line1 {
+	position: absolute;
+	top: 134px;
+	left: -130px;
+}
+
+.svg__line2 {
+	position: absolute;
+	top: 15px;
+	left: -72px;
+}
+
+.svg__line3 {
+	position: absolute;
+	top: -24px;
+	left: 70px;
+}
+
+.svg__line4 {
+	position: absolute;
+	top: 40px;
+	left: 210px;
 }
