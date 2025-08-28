@@ -123,8 +123,6 @@ svg {
 /* studio */
 
 .studio {
-	opacity: 0;
-	transform: translateY(50px);
 	margin: 100px 0;
 	margin-bottom: 80px;
 }
@@ -142,7 +140,7 @@ svg {
 	line-height: 98%;
 	text-transform: uppercase;
 	color: var(--color-black);
-	background-image: url('/icons/fon_text.svg');
+	background-image: url('icons/fon_text.svg');
 	background-repeat: no-repeat;
 	height: 100px;
 	max-width: 400px;
@@ -197,8 +195,28 @@ svg {
 /* master */
 
 .master {
-	background-image: url('/icons/fon_master.svg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: auto;
+}
+
+.content__master {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title__master {
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 98%;
+	text-transform: uppercase;
+	color: var(--color-black);
+	background-image: url('/icons/fon_text.master.svg');
+	background-repeat: no-repeat;
+	height: 100px;
+	max-width: 270px;
+	padding: 25px 20px 17px 24px;
+	text-align: center;
 }
