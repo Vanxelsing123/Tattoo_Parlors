@@ -4,12 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Кольня тату и кофе</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-			rel="stylesheet"
-		/>
+
 		<link rel="stylesheet" href="styles/style.css" />
 	</head>
 	<body>
@@ -18,32 +13,34 @@
 				<a class="header__logo" href="/index.html">
 					<img src="icons/logo_3_white 1.svg" alt="Logo" />
 				</a>
-				<ul class="header__item list-reset">
-					<li class="header__li">
-						<a href="#" class="header__link">НАША СТУДИЯ</a>
-					</li>
-					<li class="header__li">
-						<a href="#" class="header__link">Отзывы </a>
-					</li>
-					<li class="header__li">
-						<a href="#" class="header__link">МАСТЕРА </a>
-					</li>
-					<li class="header__li">
-						<a href="#" class="header__link">УДАЛЕНИЕ ТАТУ</a>
-					</li>
-					<li class="header__li">
-						<a href="#" class="header__link"> ОБУЧЕНИЕ</a>
-					</li>
-					<li class="header__li">
-						<a href="#" class="header__link">КОФЕЙНЯ</a>
-					</li>
-					<li class="header__li">
-						<a href="#" class="header__link">ТОВАРЫ</a>
-					</li>
-					<li class="header__li">
-						<a href="#" class="header__link"> Контакты</a>
-					</li>
-				</ul>
+				<nav class="navigation">
+					<ul class="header__item list-reset">
+						<li class="header__li">
+							<a href="#" class="header__link">НАША СТУДИЯ</a>
+						</li>
+						<li class="header__li">
+							<a href="#" class="header__link">Отзывы </a>
+						</li>
+						<li class="header__li">
+							<a href="#" class="header__link">МАСТЕРА </a>
+						</li>
+						<li class="header__li">
+							<a href="#" class="header__link">УДАЛЕНИЕ ТАТУ</a>
+						</li>
+						<li class="header__li">
+							<a href="#" class="header__link"> ОБУЧЕНИЕ</a>
+						</li>
+						<li class="header__li">
+							<a href="#" class="header__link">КОФЕЙНЯ</a>
+						</li>
+						<li class="header__li">
+							<a href="#" class="header__link">ТОВАРЫ</a>
+						</li>
+						<li class="header__li">
+							<a href="#" class="header__link"> Контакты</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</header>
 		<main id="main">
@@ -159,49 +156,45 @@
 							</div>
 							<ul class="master__item list-reset">
 								<li class="master__li">
-									<!-- <div class="fon__img">
-										<svg
-											width="286"
-											height="366"
-											viewBox="0 0 286 366"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M0.300781 123.5L285.5 0.5L273.5 366H41.8008L0.300781 123.5Z"
-												fill="white"
-											/>
-										</svg>
-									</div> -->
-									<img src="images/Ekaterina_master.png" alt="Ekaterina" />
+									<div class="master__img--maksim">
+										<img src="images/Ekaterina_master.png" alt="Ekaterina" />
+									</div>
 									<div class="gradient"></div>
 									<p class="master__name">ЕКАТЕРИНА МАКСИМОВА</p>
 									<p class="text__tatu">Мастер художественной татуировки</p>
 									<button>СМОТРЕТЬ ПОРТФОЛИО</button>
 								</li>
 								<li class="master__li">
-									<img src="images/Elizaveta_master.png" alt="Elizaveta" />
+									<div class="master__img--petrova">
+										<img src="images/Elizaveta_master.png" alt="Elizaveta" />
+									</div>
 									<div class="gradient"></div>
 									<p class="master__name">ЕЛИЗАВЕТА ПЕТРОВА</p>
 									<p class="text__tatu">Мастер художественной татуировки</p>
 									<button>СМОТРЕТЬ ПОРТФОЛИО</button>
 								</li>
 								<li class="master__li">
-									<img src="images/Polina_master.png" alt="Polina" />
+									<div class="master__img--gamova">
+										<img src="images/Polina_master.png" alt="Polina" />
+									</div>
 									<div class="gradient"></div>
 									<p class="master__name">ПОЛИНА ГАМОВА</p>
 									<p class="text__tatu">Мастер художественной татуировки</p>
 									<button>СМОТРЕТЬ ПОРТФОЛИО</button>
 								</li>
 								<li class="master__li">
-									<img src="images/Sasha_master.png" alt="Sasha" />
+									<div class="master__img--cat">
+										<img src="images/Sasha_master.png" alt="Sasha" />
+									</div>
 									<div class="gradient"></div>
 									<p class="master__name">САША КОТ</p>
 									<p class="text__tatu">Мастер художественной татуировки</p>
 									<button>СМОТРЕТЬ ПОРТФОЛИО</button>
 								</li>
 								<li class="master__li">
-									<img src="images/Elizaveta_grom.png" alt="Elizaveta Grom" />
+									<div class="master__img--grom">
+										<img src="images/Elizaveta_grom.png" alt="Elizaveta Grom" />
+									</div>
 									<div class="gradient"></div>
 									<p class="master__name">ЕЛИЗАВЕТА ГРОМОВА</p>
 									<p class="text__tatu">Мастер художественной татуировки</p>
@@ -210,6 +203,94 @@
 								<img class="master__anvil" src="icons/Anvil_master.svg" alt="Anvil" />
 							</ul>
 						</div>
+					</div>
+				</div>
+			</section>
+			<section class="portfolio">
+				<div class="container">
+					<div class="portfolio__text">
+						<h2 class="title__portfolio">ПОРТФОЛИО</h2>
+						<p class="title__text">
+							Наши ученики очень довольны пройденым курсом по татуировкам. Посмотрите, какие у них
+							получились результаты
+						</p>
+					</div>
+					<div class="portfolio__photo">
+						<img src="images/tatu/tatu.png" alt="tatu" />
+						<img src="images/tatu/tatu (2).png" alt="tatu" />
+						<img src="images/tatu/tatu (3).png" alt="tatu" />
+						<img src="images/tatu/tatu (4).png" alt="tatu" />
+						<img src="images/tatu/tatu (5).png" alt="tatu" />
+						<img src="images/tatu/tatu (6).png" alt="tatu" />
+						<img src="images/tatu/tatu (7).png" alt="tatu" />
+						<img src="images/tatu/tatu (8).png" alt="tatu" />
+						<img src="images/tatu/tatu (9).png" alt="tatu" />
+						<img src="images/tatu/tatu (10).png" alt="tatu" />
+						<img src="images/tatu/tatu (11).png" alt="tatu" />
+						<img src="images/tatu/tatu (12).png" alt="tatu" />
+						<img src="images/tatu/tatu (13).png" alt="tatu" />
+						<img src="images/tatu/tatu (14).png" alt="tatu" />
+					</div>
+				</div>
+			</section>
+			<section class="remove__tatu">
+				<div class="container">
+					<div class="content__remove">
+						<div class="apparat__icon">
+							<img src="icons/apparat-remove.svg" alt="" />
+						</div>
+						<div class="remove__text">
+							<h2 class="remove__title">УДАЛЕНИЕ</h2>
+							<span class="remove__title--text">ТАТУИРОВОК</span>
+							<p class="remove__text--magic">
+								Благодаря дорогостоящему лазеру Magic Super Full от компании Melsytech, мы удаляем
+								татуировки и татуаж любой сложности без шрамов и ожогов.
+							</p>
+							<ul class="remove__item">
+								<li class="remove__li">Специалист с медицинским образованием</li>
+								<li class="remove__li">Аппарат с регистрационным удостоверением</li>
+								<li class="remove__li">Удаление цветных и черных татуировок</li>
+								<li class="remove__li">Удаления татуажа бровей, стрелок и губ</li>
+								<li class="remove__li">Без шрамов и ожогов</li>
+							</ul>
+							<div class="remove__button">
+								<button class="remove__btn">УЗНАТЬ ПОДРОБНЕЕ</button>
+								<span class="line"> </span>
+								<span class="line"> </span>
+								<span class="line"> </span>
+								<span class="line"> </span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="container__reviews">
+					<div class="reviews__text">
+						<h2 class="title__reviews">ОТЗЫВЫ КЛИЕНТОВ</h2>
+						<p class="title__reviews--text">
+							Наши клиенты очень довольны татуировками.  Посмотрите, что они говорят про студию!
+						</p>
+					</div>
+					<div class="reviews__photo">
+						<img src="images/reviews/Reviews (1).png" alt="reviews" />
+						<img src="images/reviews/Reviews (2).png" alt="reviews" />
+						<img src="images/reviews/Reviews (3).png" alt="reviews" />
+						<img src="images/reviews/Reviews (4).png" alt="reviews" />
+						<img src="images/reviews/Reviews (5).png" alt="reviews" />
+						<img src="images/reviews/Reviews (6).png" alt="reviews" />
+						<img src="images/reviews/Reviews (7).png" alt="reviews" />
+						<img src="images/reviews/Reviews (8).png" alt="reviews" />
+						<img src="images/reviews/Reviews (9).png" alt="reviews" />
+						<img src="images/reviews/Reviews (10).png" alt="reviews" />
+						<img src="images/reviews/Reviews (11).png" alt="reviews" />
+						<img src="images/reviews/Reviews (12).png" alt="reviews" />
+						<img src="images/reviews/Reviews (13).png" alt="reviews" />
+						<img src="images/reviews/Reviews (14).png" alt="reviews" />
+						<img src="images/reviews/Reviews (15).png" alt="reviews" />
+						<img src="images/reviews/Reviews (16).png" alt="reviews" />
+						<img src="images/reviews/Reviews (17).png" alt="reviews" />
+						<img src="images/reviews/Reviews (18).png" alt="reviews" />
 					</div>
 				</div>
 			</section>
