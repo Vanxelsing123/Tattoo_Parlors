@@ -56,6 +56,15 @@ svg {
 }
 
 @font-face {
+	font-family: 'Neusa';
+	src: url('../fonts/Neusa-Bold.woff2') format('woff2'),
+		url('../fonts/Neusa-Bold.woff') format('woff');
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
 	font-family: 'Inter';
 	src: url('../fonts/InterRegular.woff2') format('woff2'),
 		url('../fonts/InterRegular.woff') format('woff');
@@ -108,8 +117,8 @@ body {
 }
 
 .header__logo {
-	display: block;
-	text-align: center;
+	display: flex;
+	justify-content: center;
 	margin-bottom: 55px;
 }
 
@@ -223,9 +232,9 @@ body {
 }
 
 .title__studio {
-	font-family: Inter;
+	font-family: 'Neusa';
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 72px;
 	line-height: 98%;
 	text-transform: uppercase;
 	color: var(--color-black);
@@ -233,7 +242,7 @@ body {
 	background-repeat: no-repeat;
 	height: 100px;
 	max-width: 400px;
-	padding: 25px 20px 17px 24px;
+	padding: 17px 20px 17px 24px;
 	text-align: center;
 }
 
@@ -328,13 +337,13 @@ body {
 }
 
 .portfolio__master {
-	padding: 0 250px 170px 200px;
+	padding: 0 10px 170px 50px;
 }
 
 .title__master {
-	font-family: Inter;
+	font-family: 'Neusa';
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 72px;
 	line-height: 98%;
 	text-transform: uppercase;
 	color: var(--color-black);
@@ -342,16 +351,15 @@ body {
 	background-repeat: no-repeat;
 	height: 100px;
 	max-width: 270px;
-	padding: 25px 20px 17px 24px;
+	padding: 14px 20px 17px 30px;
 	text-align: center;
 }
 
 .master__item {
 	display: grid;
-	gap: 60px;
+	gap: 20px;
 	grid-template-columns: repeat(3, 1fr);
 	align-items: stretch;
-	width: 850px;
 }
 
 .master__li {
@@ -364,7 +372,7 @@ body {
 
 .gradient {
 	position: absolute;
-	bottom: 220px;
+	bottom: 165px;
 	left: 0;
 	width: 100%;
 	height: 30%;
@@ -415,7 +423,7 @@ body {
 	height: 248px;
 	width: 222px;
 	z-index: -1;
-	left: 17px;
+	left: 75px;
 	top: 100px;
 }
 
@@ -428,7 +436,7 @@ body {
 	height: 248px;
 	width: 222px;
 	z-index: -1;
-	left: -2px;
+	left: 60px;
 	top: 100px;
 }
 
@@ -441,7 +449,7 @@ body {
 	height: 267px;
 	width: 161px;
 	z-index: -1;
-	left: 1px;
+	left: 65px;
 	top: 15px;
 }
 
@@ -454,7 +462,7 @@ body {
 	height: 224px;
 	width: 219px;
 	z-index: -1;
-	left: 1px;
+	left: 63px;
 	top: 65px;
 }
 
@@ -477,7 +485,8 @@ body {
 .master__name {
 	font-family: 'Neusa';
 	font-weight: 700;
-	font-size: 30px;
+	font-size: 40px;
+	width: 360px;
 	line-height: 98%;
 	text-transform: uppercase;
 	text-align: center;
@@ -534,8 +543,9 @@ body {
 }
 
 .title__portfolio {
+	font-family: 'Neusa';
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 72px;
 	line-height: 98%;
 	text-transform: uppercase;
 	text-align: center;
@@ -553,10 +563,11 @@ body {
 	height: 98px;
 	background-position: center center;
 	z-index: -1;
-	top: -29px;
-	left: -20px;
+	top: -15px;
+	left: -27px;
 }
 .title__text {
+	font-family: 'Inter';
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 190%;
@@ -686,9 +697,10 @@ body {
 }
 
 .remove__title {
+	font-family: 'Neusa';
 	position: relative;
 	max-width: 350px;
-	font-size: 50px;
+	font-size: 72px;
 	line-height: 140%;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -704,13 +716,14 @@ body {
 	z-index: -1;
 	background-repeat: no-repeat;
 	background-position: center center;
-	right: 40px;
+	right: 72px;
 }
 
 .remove__title--text {
+	font-family: 'Neusa';
 	position: relative;
 	max-width: 350px;
-	font-size: 50px;
+	font-size: 72px;
 	line-height: 98%;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -727,6 +740,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center center;
 	top: -13px;
+	right: -11px;
 }
 
 .remove__text--magic {
@@ -760,6 +774,7 @@ body {
 }
 
 .remove__btn {
+	cursor: pointer;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 193%;
@@ -839,9 +854,10 @@ body {
 }
 
 .title__reviews {
+	font-family: 'Neusa';
 	position: relative;
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 72px;
 	line-height: 98%;
 	text-transform: uppercase;
 	text-align: center;
@@ -857,7 +873,7 @@ body {
 	height: 95px;
 	z-index: -1;
 	background-repeat: no-repeat;
-	top: -23px;
+	top: -13px;
 	right: -17px;
 }
 
@@ -959,4 +975,603 @@ body {
 .reviews__photo img:nth-child(18) {
 	top: 520px;
 	left: 800px;
+}
+
+/* coffe */
+
+.coffe {
+	margin-bottom: 100px;
+}
+
+.coffe__svg {
+	position: relative;
+}
+
+.coffe__svg::before {
+	content: '';
+	position: absolute;
+	background-image: url('../icons/sparkls-kofe.svg');
+	width: 1638px;
+	height: 768px;
+	top: -194px;
+	left: -209px;
+}
+
+.coffe__text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+.title__coffe {
+	font-family: 'Neusa';
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 98%;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--color-black);
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.title__coffe::before {
+	content: '';
+	position: absolute;
+	background-image: url('../icons/fon-coffe-text.svg');
+	width: 486px;
+	height: 100px;
+	z-index: -1;
+	top: -20px;
+	left: -30px;
+}
+
+.title__coffe--text {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 190%;
+	text-align: center;
+	color: var(--color-white);
+	max-width: 700px;
+}
+
+.coffe__photo {
+	display: grid;
+	grid-template-rows: auto auto;
+	gap: 30px;
+	max-width: 1170px;
+}
+
+.photo__big {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.photo__small {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+.photo__small img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+.svg__content {
+	position: relative;
+	overflow: visible;
+}
+
+.svg__cup {
+	position: absolute;
+	top: -1308px;
+	left: -301px;
+}
+
+.svg__bowl {
+	position: absolute;
+	top: -1085px;
+	right: -300px;
+}
+
+.svg__tort {
+	position: absolute;
+	top: -408px;
+	right: -255px;
+}
+
+/* school */
+
+.school {
+	margin-bottom: 100px;
+}
+
+.school__fon {
+	position: relative;
+}
+
+.school__fon::before {
+	content: '';
+	position: absolute;
+	background-image: url('../icons/fon-school.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 1710px;
+	height: 1394px;
+	right: 100px;
+	z-index: -1;
+}
+
+.school__text {
+	padding-top: 350px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 80px;
+}
+
+.title__school {
+	font-family: 'Neusa';
+	max-width: 800px;
+	font-weight: 700;
+	font-size: 96px;
+	line-height: 98%;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	position: relative;
+}
+
+.title__school::before {
+	content: '';
+	position: absolute;
+	background-image: url('../icons/svg-line-school.svg');
+	background-repeat: no-repeat;
+	width: 727px;
+	height: 216px;
+	top: -285px;
+}
+
+.tort__svg {
+	position: relative;
+	overflow: visible;
+}
+
+.tort__school {
+	position: absolute;
+	top: -1113px;
+	left: 143px;
+}
+
+.content__school {
+	display: flex;
+	justify-content: space-between;
+	gap: 45px;
+	margin-bottom: 60px;
+}
+
+.training {
+	display: grid;
+	grid-template-columns: 85px 1fr; /* иконка + текст */
+	align-items: center;
+	height: 90px;
+	gap: 12px;
+}
+
+.training__img {
+	margin-right: 25px;
+}
+
+.students__desc {
+	font-family: 'Neusa';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 108%;
+	text-transform: uppercase;
+	width: 300px;
+	color: var(--color-white);
+}
+
+.school__video {
+	margin-bottom: 45px;
+}
+
+.school__decs {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 216%;
+	text-align: center;
+	color: var(--color-white);
+	margin-bottom: 70px;
+}
+
+.school__btn {
+	display: flex;
+	justify-content: center;
+}
+
+.school__button {
+	display: flex;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 193%;
+	letter-spacing: 0.12em;
+	cursor: pointer;
+	color: var(--color-black);
+	padding: 16px 86px;
+	background-color: var(--color-yellow);
+	border-radius: 68px;
+	transition: all 0.3s ease;
+}
+
+.school__button:hover {
+	color: #111;
+	text-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28;
+	box-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28, 0 0 80px #e5bc28;
+	transform: scale(1.05);
+}
+
+/* form */
+
+.school__form {
+	margin-bottom: 100px;
+	position: relative;
+}
+
+.content__form {
+	display: flex;
+	padding: 180px 80px 80px 80px;
+}
+
+.form__text {
+	margin-right: 115px;
+}
+
+.school__form::before {
+	content: '';
+	background-image: url('../icons/fon-form.svg');
+	position: absolute;
+	width: 1200px;
+	height: 410px;
+	z-index: -1;
+	right: 375px;
+	top: 55px;
+}
+
+.title__form {
+	position: relative;
+	font-family: 'Neusa';
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 98%;
+	text-transform: uppercase;
+	color: var(--color-black);
+	margin-bottom: 20px;
+}
+
+.title__form::before {
+	content: '';
+	position: absolute;
+	background-image: url('../icons/fon-title-form.svg');
+	background-repeat: no-repeat;
+	width: 590px;
+	height: 100px;
+	z-index: -1;
+	top: -12px;
+	right: 5px;
+}
+
+.desc__form--title {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 195%;
+	color: #171717;
+	max-width: 570px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form input {
+	margin-bottom: 20px;
+	width: 330px;
+	height: 60px;
+	padding-left: 35px;
+	background-color: var(--color-white);
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 193%;
+	color: #acacac;
+	border-radius: 68px;
+}
+
+.form__btn {
+	cursor: pointer;
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 193%;
+	letter-spacing: 0.12em;
+	text-align: center;
+	color: #fff;
+	padding: 16px 55px;
+	background-color: var(--color-black);
+	border-radius: 68px;
+}
+
+.form__img {
+	position: relative;
+	overflow: visible;
+}
+
+.form__svg--topLeft {
+	position: absolute;
+	top: -370px;
+}
+
+.form__svg--bottomLeft {
+	position: absolute;
+	top: -93px;
+	left: 20px;
+}
+
+.form__svg--topRight {
+	position: absolute;
+	top: -433px;
+	right: 445px;
+}
+
+.form__svg--bottomRight {
+	position: absolute;
+	top: -138px;
+	right: 545px;
+}
+
+/* products */
+
+.products {
+	margin-bottom: 100px;
+}
+
+.products__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 60px;
+}
+
+.title__products {
+	position: relative;
+	font-family: 'Neusa';
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 98%;
+	text-transform: uppercase;
+	color: var(--color-black);
+	margin-bottom: 20px;
+}
+
+.title__products::before {
+	content: '';
+	position: absolute;
+	background-image: url('../icons/product-fon-title.svg');
+	width: 267px;
+	height: 94px;
+	z-index: -1;
+	top: -11px;
+	left: -23px;
+}
+
+.desc__products {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 195%;
+	color: var(--color-white);
+	max-width: 570px;
+}
+
+.products__btn {
+	cursor: pointer;
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 193%;
+	letter-spacing: 0.12em;
+	text-align: center;
+	color: var(--color-white);
+	border: 1px solid var(--color-white);
+	border-radius: 68px;
+	padding: 14px 78px;
+	transition: all 0.3s ease-in-out;
+}
+
+.products__btn:hover {
+	color: var(--color-black);
+	background-color: var(--color-white);
+}
+
+.products__card {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+}
+
+.card__title {
+	font-family: 'Neusa';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 125%;
+	text-transform: uppercase;
+	color: var(--color-white);
+	margin: 30px 0 30px 0;
+}
+
+.card__desc {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 190%;
+	color: var(--color-white);
+}
+
+/* footer */
+
+.footer {
+	position: relative;
+	padding-bottom: 50px;
+}
+
+.footer::before {
+	position: absolute;
+	content: '';
+	background-image: url('../icons/fon-footer.svg');
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.content__footer {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-top: 100px;
+	padding-bottom: 82px;
+}
+
+.footer__left {
+	margin-right: 200px;
+}
+
+.title__footer {
+	font-family: 'Neusa';
+	font-weight: 700;
+	font-size: 96px;
+	line-height: 98%;
+	text-transform: uppercase;
+	color: var(--color-black);
+	margin-bottom: 36px;
+}
+
+.decs__footer {
+	font-family: 'Inter';
+	font-weight: 500;
+	max-width: 370px;
+	font-size: 18px;
+	line-height: 190%;
+	color: var(--color-black);
+	margin-bottom: 67px;
+}
+
+.content__footer::after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 49%;
+	transform: translateX(-50%);
+	width: 1170px;
+	height: 1px;
+	background: var(--color-black);
+	opacity: 0.3;
+	margin-bottom: 40px;
+}
+
+.footer__left--tell {
+	display: flex;
+	flex-direction: column;
+}
+
+.content__footer--title {
+	font-family: 'Neusa';
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 98%;
+	letter-spacing: 0.33em;
+	text-transform: uppercase;
+	color: rgba(23, 23, 23, 0.3);
+	margin-bottom: 8px;
+}
+
+.footer__left--tell a {
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 190%;
+	color: var(--color-black);
+}
+
+.footer__center {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px 130px;
+}
+
+.center__address {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 190%;
+	color: var(--color-black);
+}
+
+.center__mail a {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 190%;
+	color: var(--color-black);
+}
+
+.center__seti--svg {
+	display: flex;
+	align-items: center;
+}
+
+.center__seti--svg a {
+	margin-right: 23px;
+}
+
+.center__location--svg {
+	display: flex;
+	align-items: center;
+}
+
+.footer__content--bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__item {
+	display: flex;
+}
+
+.footer__li {
+	margin-right: 20px;
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 11px;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--color-black);
+}
+
+.footer__prava {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 190%;
+	color: var(--color-black);
 }
