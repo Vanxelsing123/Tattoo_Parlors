@@ -112,8 +112,6 @@ body {
 .header {
 	margin-top: 70px;
 	margin-bottom: 80px;
-	/* opacity: 0;
-	transform: translateY(50px); */
 }
 
 .header__logo {
@@ -168,54 +166,6 @@ body {
 	text-transform: uppercase;
 	text-align: center;
 	color: var(--color-white);
-	text-shadow: 0 0 10px #d538e1, 0 0 20px #d538e1, 0 0 40px #d538e1;
-
-	/* Первая анимация: мигание */
-	animation: flicker 2s ease-in-out 3, steady 1s forwards;
-	animation-delay: 0s, 0.7s; /* steady стартует после flicker */
-}
-
-@keyframes flicker {
-	0% {
-		opacity: 1;
-		text-shadow: 0 0 10px #d538e1, 0 0 20px #d538e1, 0 0 40px #d538e1;
-	}
-	15% {
-		opacity: 0.3;
-		text-shadow: none;
-	}
-	30% {
-		opacity: 1;
-		text-shadow: 0 0 10px #d538e1, 0 0 20px #d538e1, 0 0 40px #d538e1;
-	}
-	45% {
-		opacity: 0.5;
-		text-shadow: none;
-	}
-	60% {
-		opacity: 1;
-		text-shadow: 0 0 10px #d538e1, 0 0 20px #d538e1, 0 0 40px #d538e1;
-	}
-	75% {
-		opacity: 0.2;
-		text-shadow: none;
-	}
-	100% {
-		opacity: 0.9;
-		text-shadow: 0 0 10px #d538e1, 0 0 20px #d538e1, 0 0 40px #d538e1;
-	}
-}
-
-@keyframes steady {
-	from {
-		opacity: 0.9;
-		text-shadow: none;
-	}
-	to {
-		opacity: 1;
-		text-shadow: 0 0 10px #d538e1, 0 0 20px #d538e1, 0 0 40px #d538e1, 0 0 80px #d538e1,
-			0 0 160px #d538e1;
-	}
 }
 
 /* studio */
@@ -750,14 +700,17 @@ body {
 	color: #fff;
 	margin-top: 40px;
 	max-width: 470px;
+	margin-bottom: 50px;
 }
 
 .remove__item {
 	padding-left: 18px;
 	margin-bottom: 65px;
+	list-style: disc;
 }
 
 .remove__item li::marker {
+	font-size: 23px;
 	color: var(--color-yellow);
 }
 
@@ -1085,10 +1038,15 @@ body {
 	right: -255px;
 }
 
+/* Скрываем все секции кроме блока с неоном */
+main > *:not(.neon) {
+	opacity: 0;
+}
+
 /* school */
 
 .school {
-	margin-bottom: 100px;
+	margin-bottom: 285px;
 }
 
 .school__fon {
