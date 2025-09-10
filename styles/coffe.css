@@ -1,0 +1,364 @@
+.menu {
+	margin-bottom: 100px;
+}
+
+.menu__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.menu__title {
+	font-family: 'Neusa';
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 98%;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--color-black);
+	position: relative;
+}
+
+.menu__title::before {
+	content: '';
+	position: absolute;
+	background-image: url('../icons/fon-title-coffe.svg');
+	width: 200px;
+	height: 100px;
+	background-repeat: no-repeat;
+	z-index: -1;
+	top: -15px;
+	right: -30px;
+}
+
+main > *:not(.neon) {
+	opacity: 1;
+}
+
+.animate {
+	opacity: 0;
+}
+
+.menu__photo {
+	margin-top: 70px;
+	display: flex;
+}
+
+.photo__cezon {
+	border-radius: 15px;
+}
+
+.photo__osnova {
+	border-radius: 15px;
+}
+
+.menu__cezon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 30px;
+}
+
+.decs__photo {
+	font-family: 'Neusa';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 98%;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--color-white);
+	margin-top: 45px;
+}
+
+.menu__osnova {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title__studio {
+	max-width: 500px;
+	background-image: none;
+	padding: 0;
+	position: relative;
+}
+
+.title__studio::before {
+	content: '';
+	position: absolute;
+	background-image: url('../icons/studia-coffe-title.svg');
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	z-index: -1;
+	top: -13px;
+	right: -5px;
+}
+
+/* .master */
+
+.text__studio {
+	margin-bottom: 0;
+}
+
+.studio__master {
+	position: relative;
+	margin-bottom: 200px;
+}
+
+.studio__master::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1024px;
+	background-image: url('../icons/fon-barista.svg');
+	background-repeat: no-repeat;
+	z-index: -1;
+	background-position: center;
+	top: 0;
+}
+
+.content__studio {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-bottom: -88px;
+	padding-top: 30px;
+}
+
+.master__photo {
+	position: relative;
+}
+
+.photo__gradient {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 40%;
+	background: linear-gradient(180deg, rgba(229, 188, 40, 0) 0%, #e5bc28 100%);
+}
+
+.studio__title {
+	font-family: 'Neusa';
+	font-weight: 700;
+	font-size: 96px;
+	line-height: 122%;
+	text-transform: uppercase;
+	color: var(--color-white);
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.studio__title::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url('../icons/fon-barista-title.svg');
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-position: center;
+	left: -110px;
+}
+
+.studio__desc {
+	display: block;
+	font-family: 'Neusa';
+	font-weight: 700;
+	font-size: 54px;
+	line-height: 122%;
+	text-transform: uppercase;
+	color: var(--color-black);
+	margin-bottom: 30px;
+}
+
+.students__desc--master {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 190%;
+	color: var(--color-black);
+	margin-bottom: 60px;
+}
+
+.seti__title {
+	font-family: 'Neusa';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 98%;
+	text-transform: uppercase;
+	color: var(--color-black);
+	margin-bottom: 26px;
+}
+
+.soc__master {
+	display: flex;
+	align-items: center;
+}
+
+.soc__master img {
+	margin-right: 23px;
+}
+
+/* .history */
+
+.studio__content {
+	display: block;
+}
+
+.history {
+	margin-top: 100px;
+}
+
+.title__history {
+	font-family: 'Neusa';
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 98%;
+	text-transform: uppercase;
+	color: var(--color-black);
+	position: relative;
+}
+
+.title__history::before {
+	content: '';
+	position: absolute;
+	background-image: url('../icons/history-title.svg');
+	width: 300px;
+	height: 100%;
+	background-repeat: no-repeat;
+	z-index: -1;
+	right: -35px;
+	top: -10px;
+}
+
+.history__top {
+	margin-bottom: 30px;
+}
+
+.history__text {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 45px;
+}
+
+.text__studio--history {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 190%;
+	color: var(--color-white);
+	max-width: 770px;
+}
+
+.history__img {
+	display: flex;
+	justify-content: space-between;
+}
+
+.reviews {
+	margin-top: 150px;
+}
+
+.coffe__svg::before {
+	top: -45px;
+}
+
+/* .reviews */
+
+.reviews::before {
+	content: '';
+	position: absolute;
+	background-image: url('../icons/studio/fon-reviews.svg');
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: -1;
+	left: 0;
+}
+
+.content__reviews {
+	padding: 200px 100px 100px 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.text__reviews {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 70px;
+}
+
+.reviews__title {
+	font-family: 'Neusa';
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 98%;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--color-yellow);
+	margin-bottom: 15px;
+}
+
+.reviews__desc {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 190%;
+	text-align: center;
+	color: var(--color-white);
+	max-width: 530px;
+}
+
+.reviews__content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 70px;
+}
+
+.reviews__card {
+	margin-right: 30px;
+	border: 1px solid #282828;
+	border-radius: 4px;
+	background: #1e1e1e;
+	padding: 33px;
+}
+
+.reviews__card:last-child {
+	margin-right: 0;
+}
+
+.card__svg {
+	display: flex;
+	align-items: center;
+	margin-bottom: 26px;
+}
+
+.card__svg svg {
+	margin-right: 20px;
+}
+
+.title__card {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 190%;
+	color: var(--color-white);
+}
+
+.desc__card {
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 190%;
+	color: var(--color-white);
+}
+
+.studio__btn {
+	margin-left: auto;
+}

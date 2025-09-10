@@ -366,6 +366,10 @@ main > *:not(.neon) {
 
 /* .master */
 
+.text__studio {
+	margin-bottom: 0;
+}
+
 .studio__master {
 	position: relative;
 	margin-bottom: 200px;
