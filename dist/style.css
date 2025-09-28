@@ -1,0 +1,2618 @@
+@charset "UTF-8";
+/* remove */
+.remove__tatu {
+  margin-bottom: 80px;
+}
+
+.content__remove {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.apparat__icon {
+  position: relative;
+  margin-right: 80px;
+}
+
+.apparat__icon::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/fon-apparat.svg");
+  width: 420px;
+  height: 623px;
+  z-index: -1;
+  background-size: cover;
+  top: 270px;
+  right: 26px;
+}
+
+.remove__title {
+  font-family: "Neusa";
+  position: relative;
+  max-width: 350px;
+  font-size: 72px;
+  line-height: 140%;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.remove__title::before {
+  content: "";
+  position: absolute;
+  width: 324px;
+  height: 95px;
+  background-image: url("../icons/fon-remove-delete.svg");
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  right: 72px;
+}
+
+.remove__title--text {
+  font-family: "Neusa";
+  position: relative;
+  max-width: 350px;
+  font-size: 72px;
+  line-height: 98%;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.remove__title--text::before {
+  content: "";
+  position: absolute;
+  width: 369px;
+  height: 95px;
+  background-image: url("../icons/fon-remove.svg");
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: -13px;
+  right: -11px;
+}
+
+.remove__text--magic {
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 216%;
+  color: #fff;
+  margin-top: 40px;
+  max-width: 470px;
+  margin-bottom: 50px;
+}
+
+.remove__item {
+  padding-left: 18px;
+  margin-bottom: 65px;
+  list-style: disc;
+}
+
+.remove__item li::marker {
+  font-size: 23px;
+  color: var(--color-yellow);
+}
+
+.remove__li {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 246%;
+  color: var(--color-white);
+}
+
+.remove__button {
+  position: relative;
+}
+
+.remove__btn {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 193%;
+  letter-spacing: 0.12em;
+  text-align: center;
+  color: var(--color-black);
+  padding: 13px 64px;
+  background-color: var(--color-yellow);
+  border-radius: 68px;
+  border: none;
+  -webkit-box-shadow: 8px 8px 0 0 #282828;
+          box-shadow: 8px 8px 0 0 #282828;
+}
+
+.remove__button .line {
+  display: block;
+  background-color: var(--color-yellow);
+  height: 4px;
+}
+
+.remove__button span:nth-child(2) {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 60px;
+  -webkit-transform: rotate(340deg);
+          transform: rotate(340deg);
+}
+
+.remove__button span:nth-child(3) {
+  position: absolute;
+  top: 77px;
+  right: 0;
+  width: 70px;
+  -webkit-transform: rotate(28deg);
+          transform: rotate(28deg);
+}
+
+.remove__button span:nth-child(4) {
+  position: absolute;
+  top: 133px;
+  right: 91px;
+  width: 52px;
+  -webkit-transform: rotate(71deg);
+          transform: rotate(71deg);
+}
+
+.remove__button span:nth-child(5) {
+  position: absolute;
+  right: 24px;
+  top: 120px;
+  width: 70px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.remove__title::before {
+  display: none;
+}
+
+.remove__title--text::before {
+  display: none;
+}
+
+main > *:not(.neon) {
+  opacity: 1;
+}
+
+.animate {
+  opacity: 0;
+}
+
+.content__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.remove__title {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98%;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-right: 15px;
+}
+
+.remove__title--text {
+  color: var(--color-yellow);
+}
+
+/* .master */
+.text__studio {
+  margin-bottom: 0;
+}
+
+.studio__master {
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.studio__master::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../icons/studio/fon-master.svg");
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: center;
+  top: 90px;
+}
+
+.content__studio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.master__photo {
+  position: relative;
+}
+
+.photo__gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 188, 40, 0)), to(#e5bc28));
+  background: linear-gradient(180deg, rgba(229, 188, 40, 0) 0%, #e5bc28 100%);
+}
+
+.studio__title {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 122%;
+  text-transform: uppercase;
+  color: var(--color-white);
+  position: relative;
+}
+
+.studio__title::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../icons/studio/fon-title-master.svg");
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: -47px;
+}
+
+.studio__desc {
+  display: block;
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 122%;
+  text-transform: uppercase;
+  color: var(--color-black);
+  margin-bottom: 30px;
+}
+
+.students__desc--master {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  color: var(--color-black);
+  margin-bottom: 60px;
+}
+
+.seti__title {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 98%;
+  text-transform: uppercase;
+  color: var(--color-black);
+  margin-bottom: 26px;
+}
+
+.soc__master {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.soc__master img {
+  margin-right: 23px;
+}
+
+/* portfolio */
+.portfolio__studia {
+  margin-bottom: 100px;
+}
+
+.portfolio__text {
+  margin-bottom: 70px;
+}
+
+.portfolio__title {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-white);
+  margin-bottom: 10px;
+}
+
+.portfolio__desc {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 195%;
+  text-align: center;
+  color: var(--color-white);
+  max-width: 570px;
+}
+
+.portfolio__studia--photo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+/* reviews */
+.reviews {
+  margin-top: 150px;
+}
+
+.coffe__svg::before {
+  top: -45px;
+}
+
+.reviews::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/studio/fon-reviews.svg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
+  left: 0;
+}
+
+.content__reviews {
+  padding: 200px 100px 100px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text__reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+}
+
+.reviews__title {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-yellow);
+  margin-bottom: 15px;
+}
+
+.reviews__desc {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  text-align: center;
+  color: var(--color-white);
+  max-width: 530px;
+}
+
+.reviews__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 70px;
+}
+
+.reviews__card {
+  margin-right: 30px;
+  border: 1px solid #282828;
+  border-radius: 4px;
+  background: #1e1e1e;
+  padding: 33px;
+}
+
+.reviews__card:last-child {
+  margin-right: 0;
+}
+
+.card__svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 26px;
+}
+
+.card__svg svg {
+  margin-right: 20px;
+}
+
+.title__card {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 190%;
+  color: var(--color-white);
+}
+
+.desc__card {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 190%;
+  color: var(--color-white);
+}
+
+.studio__btn {
+  margin-left: auto;
+}
+
+.menu {
+  margin-bottom: 100px;
+}
+
+.menu__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__title {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 98%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-black);
+  position: relative;
+}
+
+.menu__title::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/fon-title-coffe.svg");
+  width: 200px;
+  height: 100px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: -15px;
+  right: -30px;
+}
+
+main > *:not(.neon) {
+  opacity: 1;
+}
+
+.animate {
+  opacity: 0;
+}
+
+.menu__photo {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.photo__cezon {
+  border-radius: 15px;
+}
+
+.photo__osnova {
+  border-radius: 15px;
+}
+
+.menu__cezon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+.decs__photo {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 98%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-white);
+  margin-top: 45px;
+}
+
+.menu__osnova {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title__studio {
+  max-width: 500px;
+  background-image: none;
+  padding: 0;
+  position: relative;
+}
+
+.title__studio::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/studia-coffe-title.svg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: -13px;
+  right: -5px;
+}
+
+/* .master */
+.text__studio {
+  margin-bottom: 0;
+}
+
+.studio__master {
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.studio__master::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1024px;
+  background-image: url("../icons/fon-barista.svg");
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: center;
+  top: 0;
+}
+
+.content__studio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: -88px;
+  padding-top: 30px;
+}
+
+.master__photo {
+  position: relative;
+}
+
+.photo__gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 188, 40, 0)), to(#e5bc28));
+  background: linear-gradient(180deg, rgba(229, 188, 40, 0) 0%, #e5bc28 100%);
+}
+
+.studio__title {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 122%;
+  text-transform: uppercase;
+  color: var(--color-white);
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.studio__title::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../icons/fon-barista-title.svg");
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: -110px;
+}
+
+.studio__desc {
+  display: block;
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 122%;
+  text-transform: uppercase;
+  color: var(--color-black);
+  margin-bottom: 30px;
+}
+
+.students__desc--master {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  color: var(--color-black);
+  margin-bottom: 60px;
+}
+
+.seti__title {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 98%;
+  text-transform: uppercase;
+  color: var(--color-black);
+  margin-bottom: 26px;
+}
+
+.soc__master {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.soc__master img {
+  margin-right: 23px;
+}
+
+/* .history */
+.studio__content {
+  display: block;
+}
+
+.history {
+  margin-top: 100px;
+}
+
+.title__history {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98%;
+  text-transform: uppercase;
+  color: var(--color-black);
+  position: relative;
+}
+
+.title__history::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/history-title.svg");
+  width: 300px;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  right: -35px;
+  top: -10px;
+}
+
+.history__top {
+  margin-bottom: 30px;
+}
+
+.history__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.text__studio--history {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  color: var(--color-white);
+  max-width: 770px;
+}
+
+.history__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews {
+  margin-top: 150px;
+}
+
+.coffe__svg::before {
+  top: -45px;
+}
+
+/* .reviews */
+.reviews::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/studio/fon-reviews.svg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
+  left: 0;
+}
+
+.content__reviews {
+  padding: 200px 100px 100px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text__reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+}
+
+.reviews__title {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-yellow);
+  margin-bottom: 15px;
+}
+
+.reviews__desc {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  text-align: center;
+  color: var(--color-white);
+  max-width: 530px;
+}
+
+.reviews__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 70px;
+}
+
+.reviews__card {
+  margin-right: 30px;
+  border: 1px solid #282828;
+  border-radius: 4px;
+  background: #1e1e1e;
+  padding: 33px;
+}
+
+.reviews__card:last-child {
+  margin-right: 0;
+}
+
+.card__svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 26px;
+}
+
+.card__svg svg {
+  margin-right: 20px;
+}
+
+.title__card {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 190%;
+  color: var(--color-white);
+}
+
+.desc__card {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 190%;
+  color: var(--color-white);
+}
+
+.studio__btn {
+  margin-left: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/fon.png");
+  background-color: #1e1e1e;
+}
+
+html,
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+:root {
+  --color-yellow: #e5bc28;
+  --color-white: #ffffff;
+  --color-black: #171717;
+}
+
+@font-face {
+  font-family: "Neusa";
+  src: url("../fonts/Neusa-Bold.woff2") format("woff2"), url("../fonts/Neusa-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/InterRegular.woff2") format("woff2"), url("../fonts/InterRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/InterMedium.woff2") format("woff2"), url("../fonts/InterMedium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("InterBold"), url("../fonts/Inter18pt-Bold.woff2") format("woff2"), url("../fonts/Inter18pt-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: local("InterSemiBold"), url("../fonts/Inter18pt-SemiBold.woff2") format("woff2"), url("../fonts/Inter18pt-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+body {
+  min-width: 380px;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}
+
+/* header */
+.header {
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 55px;
+}
+
+.header__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__li {
+  position: relative;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: background-color ease-in-out 0.5s;
+  transition: background-color ease-in-out 0.5s;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+.header__li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 160px;
+  height: 30px;
+  background-color: var(--color-yellow);
+  border-radius: 999px;
+  -webkit-transform: translate(-50%, -50%) scale(0.8);
+          transform: translate(-50%, -50%) scale(0.8);
+  -webkit-transition: opacity 0.4s ease, -webkit-transform 0.4s ease;
+  transition: opacity 0.4s ease, -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition: transform 0.4s ease, opacity 0.4s ease, -webkit-transform 0.4s ease;
+  opacity: 0;
+  z-index: -1;
+}
+
+.header__li:hover::before {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.header__li:hover {
+  color: var(--color-black);
+}
+
+.neon__text {
+  font-family: "Neusa";
+  font-size: 170px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-white);
+}
+
+/* studio */
+.studio {
+  margin: 100px 0;
+  margin-bottom: 80px;
+}
+
+.studio__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.title__studio {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98%;
+  text-transform: uppercase;
+  color: var(--color-black);
+  background-image: url("../icons/fon_text.svg");
+  background-repeat: no-repeat;
+  height: 100px;
+  max-width: 400px;
+  padding: 17px 20px 17px 24px;
+  text-align: center;
+}
+
+.text__studio {
+  font-family: var(--font-family);
+  margin-bottom: 80px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  color: var(--color-white);
+  max-width: 550px;
+}
+
+.studio__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.studio__img {
+  border-radius: 10px;
+}
+
+.studio__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.big-img {
+  margin-right: 50px;
+}
+
+.studio__btn {
+  cursor: pointer;
+  margin-top: 40px;
+  border-radius: 68px;
+  background-color: var(--color-yellow);
+  padding: 12px 44px;
+  font-weight: 700;
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 193%;
+  letter-spacing: 0.12em;
+  text-align: center;
+  color: #171717;
+  border: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.studio__btn:hover {
+  color: #111;
+  text-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28;
+  -webkit-box-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28, 0 0 80px #e5bc28;
+          box-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28, 0 0 80px #e5bc28;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+/* master */
+.master {
+  margin-bottom: 90px;
+}
+
+.master__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text__master {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  text-align: center;
+  color: var(--color-white);
+  max-width: 618px;
+}
+
+.content__master {
+  position: relative;
+  background-image: url("../icons/fon_master.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 100px;
+  z-index: 1;
+}
+
+.master__anvil {
+  position: absolute;
+  bottom: -242px;
+  right: 91px;
+}
+
+.portfolio__master {
+  padding: 0 10px 170px 50px;
+}
+
+.title__master {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98%;
+  text-transform: uppercase;
+  color: var(--color-black);
+  background-image: url("/icons/fon_text.master.svg");
+  background-repeat: no-repeat;
+  height: 100px;
+  max-width: 270px;
+  padding: 14px 20px 17px 30px;
+  text-align: center;
+}
+
+.master__item {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.master__li {
+  position: relative;
+}
+
+.master__img {
+  position: relative;
+}
+
+.gradient {
+  position: absolute;
+  bottom: 165px;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 188, 40, 0)), to(#e5bc28));
+  background: linear-gradient(180deg, rgba(229, 188, 40, 0) 0%, #e5bc28 100%);
+}
+
+.master__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  text-align: center;
+  height: 100%;
+}
+
+.master__li img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 40px;
+     object-position: center 40px;
+  display: block;
+}
+
+.master__img--maksim::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/fon-maksim.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 268px;
+  width: 286px;
+  z-index: -1;
+  left: 9px;
+  top: 82px;
+}
+
+.master__img {
+  position: relative;
+}
+
+.master__img--petrova::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/fon-petrova.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 248px;
+  width: 222px;
+  z-index: -1;
+  left: 75px;
+  top: 100px;
+}
+
+.master__img--gamova::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/fon-gamova.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 248px;
+  width: 222px;
+  z-index: -1;
+  left: 60px;
+  top: 100px;
+}
+
+.master__img--cat::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/fon-cat.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 267px;
+  width: 161px;
+  z-index: -1;
+  left: 65px;
+  top: 15px;
+}
+
+.master__img--grom::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/fon-grom.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 224px;
+  width: 219px;
+  z-index: -1;
+  left: 63px;
+  top: 65px;
+}
+
+.master__li p {
+  margin: 10px 0 5px;
+}
+
+.master__li button {
+  margin-top: 30px;
+  padding: 12px 60px;
+  cursor: pointer;
+  font-size: 11px;
+  color: var(--color-white);
+  border-radius: 68px;
+  background-color: var(--color-black);
+  border: none;
+  font-family: "Inter";
+}
+
+.master__name {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 40px;
+  width: 360px;
+  line-height: 98%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.text__tatu {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 190%;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.master__svg {
+  position: relative;
+}
+
+.svg__line1 {
+  position: absolute;
+  top: 134px;
+  left: -130px;
+}
+
+.svg__line2 {
+  position: absolute;
+  top: 15px;
+  left: -72px;
+}
+
+.svg__line3 {
+  position: absolute;
+  top: -24px;
+  left: 70px;
+}
+
+.svg__line4 {
+  position: absolute;
+  top: 40px;
+  left: 210px;
+}
+
+/* portfolio */
+.portfolio {
+  margin-bottom: 30px;
+}
+
+.portfolio__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title__portfolio {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-black);
+  display: inline-block;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.title__portfolio::before {
+  content: "";
+  background-image: url("../icons/fon-portfolio-title.svg");
+  width: 374px;
+  position: absolute;
+  height: 98px;
+  background-position: center center;
+  z-index: -1;
+  top: -15px;
+  left: -27px;
+}
+
+.title__text {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  text-align: center;
+  color: var(--color-white);
+  max-width: 618px;
+}
+
+.portfolio__photo {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 1000px;
+}
+
+.portfolio__photo img:nth-child(1) {
+  position: absolute;
+  top: 30px;
+  left: -135px;
+}
+
+.portfolio__photo img:nth-child(2) {
+  position: absolute;
+  top: 240px;
+  left: 10px;
+}
+
+.portfolio__photo img:nth-child(3) {
+  position: absolute;
+  top: 465px;
+  left: -171px;
+}
+
+.portfolio__photo img:nth-child(4) {
+  position: absolute;
+  top: 527px;
+  left: 12px;
+  z-index: -1;
+}
+
+.portfolio__photo img:nth-child(5) {
+  position: absolute;
+  top: 57px;
+  left: 224px;
+}
+
+.portfolio__photo img:nth-child(6) {
+  position: absolute;
+  top: 433px;
+  left: 301px;
+}
+
+.portfolio__photo img:nth-child(7) {
+  position: absolute;
+  top: 372px;
+  left: 561px;
+}
+
+.portfolio__photo img:nth-child(8) {
+  position: absolute;
+  top: 506px;
+  left: 669px;
+  z-index: -1;
+}
+
+.portfolio__photo img:nth-child(9) {
+  position: absolute;
+  top: 84px;
+  left: 467px;
+}
+
+.portfolio__photo img:nth-child(10) {
+  position: absolute;
+  top: 60px;
+  right: 246px;
+}
+
+.portfolio__photo img:nth-child(11) {
+  position: absolute;
+  top: 265px;
+  right: 109px;
+  z-index: -1;
+}
+
+.portfolio__photo img:nth-child(12) {
+  position: absolute;
+  top: 391px;
+  right: -88px;
+}
+
+.portfolio__photo img:nth-child(13) {
+  position: absolute;
+  top: 116px;
+  right: -153px;
+  z-index: -1;
+}
+
+.portfolio__photo img:nth-child(14) {
+  position: absolute;
+  top: -13px;
+  right: -7px;
+}
+
+/* remove */
+.remove__tatu {
+  margin-bottom: 80px;
+}
+
+.content__remove {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.apparat__icon {
+  position: relative;
+  margin-right: 80px;
+}
+
+.apparat__icon::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/fon-apparat.svg");
+  width: 420px;
+  height: 623px;
+  z-index: -1;
+  background-size: cover;
+  top: 270px;
+  right: 26px;
+}
+
+.remove__title {
+  font-family: "Neusa";
+  position: relative;
+  max-width: 350px;
+  font-size: 72px;
+  line-height: 140%;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.remove__title::before {
+  content: "";
+  position: absolute;
+  width: 324px;
+  height: 95px;
+  background-image: url("../icons/fon-remove-delete.svg");
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  right: 72px;
+}
+
+.remove__title--text {
+  font-family: "Neusa";
+  position: relative;
+  max-width: 350px;
+  font-size: 72px;
+  line-height: 98%;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.remove__title--text::before {
+  content: "";
+  position: absolute;
+  width: 369px;
+  height: 95px;
+  background-image: url("../icons/fon-remove.svg");
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: -13px;
+  right: -11px;
+}
+
+.remove__text--magic {
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 216%;
+  color: #fff;
+  margin-top: 40px;
+  max-width: 470px;
+  margin-bottom: 50px;
+}
+
+.remove__item {
+  padding-left: 18px;
+  margin-bottom: 65px;
+  list-style: disc;
+}
+
+.remove__item li::marker {
+  font-size: 23px;
+  color: var(--color-yellow);
+}
+
+.remove__li {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 246%;
+  color: var(--color-white);
+}
+
+.remove__button {
+  position: relative;
+}
+
+.remove__btn {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 193%;
+  letter-spacing: 0.12em;
+  text-align: center;
+  color: var(--color-black);
+  padding: 13px 64px;
+  background-color: var(--color-yellow);
+  border-radius: 68px;
+  border: none;
+  -webkit-box-shadow: 8px 8px 0 0 #282828;
+          box-shadow: 8px 8px 0 0 #282828;
+}
+
+.remove__button .line {
+  display: block;
+  background-color: var(--color-yellow);
+  height: 4px;
+}
+
+.remove__button span:nth-child(2) {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 60px;
+  -webkit-transform: rotate(340deg);
+          transform: rotate(340deg);
+}
+
+.remove__button span:nth-child(3) {
+  position: absolute;
+  top: 77px;
+  right: 0;
+  width: 70px;
+  -webkit-transform: rotate(28deg);
+          transform: rotate(28deg);
+}
+
+.remove__button span:nth-child(4) {
+  position: absolute;
+  top: 133px;
+  right: 91px;
+  width: 52px;
+  -webkit-transform: rotate(71deg);
+          transform: rotate(71deg);
+}
+
+.remove__button span:nth-child(5) {
+  position: absolute;
+  right: 24px;
+  top: 120px;
+  width: 70px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* reviews */
+.reviews {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.reviews::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/Reviews.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1710px;
+  height: 1068px;
+  right: 100px;
+  z-index: -1;
+}
+
+.reviews__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 250px;
+  margin-bottom: 10px;
+}
+
+.title__reviews {
+  font-family: "Neusa";
+  position: relative;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-white);
+  margin-bottom: 30px;
+}
+
+.title__reviews::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/Reviews-fon-text.svg");
+  width: 553px;
+  height: 95px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  top: -13px;
+  right: -17px;
+}
+
+.title__reviews--text {
+  max-width: 520px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.reviews__photo {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+
+.container__reviews {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.reviews__photo img {
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.reviews__photo img:nth-child(1) {
+  top: 0;
+  left: 60px;
+}
+
+.reviews__photo img:nth-child(2) {
+  top: 40px;
+  left: 260px;
+}
+
+.reviews__photo img:nth-child(3) {
+  top: 100px;
+  right: 0;
+}
+
+.reviews__photo img:nth-child(4) {
+  top: 200px;
+  left: 95px;
+}
+
+.reviews__photo img:nth-child(5) {
+  top: 150px;
+  left: 350px;
+}
+
+.reviews__photo img:nth-child(6) {
+  top: 50px;
+  left: 500px;
+}
+
+.reviews__photo img:nth-child(7) {
+  top: 250px;
+  left: 600px;
+}
+
+.reviews__photo img:nth-child(8) {
+  top: 350px;
+  left: 450px;
+}
+
+.reviews__photo img:nth-child(9) {
+  top: 90px;
+  left: 700px;
+}
+
+.reviews__photo img:nth-child(10) {
+  top: 0;
+  left: 800px;
+}
+
+.reviews__photo img:nth-child(11) {
+  top: 60px;
+  left: 900px;
+}
+
+.reviews__photo img:nth-child(12) {
+  top: 313px;
+  left: 157px;
+}
+
+.reviews__photo img:nth-child(13) {
+  top: 170px;
+  left: 922px;
+}
+
+.reviews__photo img:nth-child(14) {
+  top: 420px;
+  left: 850px;
+}
+
+.reviews__photo img:nth-child(15) {
+  top: 500px;
+  left: 150px;
+}
+
+.reviews__photo img:nth-child(16) {
+  top: 421px;
+  right: 0;
+}
+
+.reviews__photo img:nth-child(17) {
+  top: 381px;
+  left: 510px;
+}
+
+.reviews__photo img:nth-child(18) {
+  top: 520px;
+  left: 800px;
+}
+
+/* coffe */
+.coffe {
+  margin-bottom: 100px;
+}
+
+.coffe__svg {
+  position: relative;
+}
+
+.coffe__svg::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/sparkls-kofe.svg");
+  width: 1638px;
+  height: 768px;
+  top: -194px;
+  left: -209px;
+}
+
+.coffe__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+.title__coffe {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.title__coffe::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/fon-coffe-text.svg");
+  width: 486px;
+  height: 100px;
+  z-index: -1;
+  top: -20px;
+  left: -30px;
+}
+
+.title__coffe--text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  text-align: center;
+  color: var(--color-white);
+  max-width: 700px;
+}
+
+.coffe__photo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 30px auto;
+  grid-template-rows: auto auto;
+  gap: 30px;
+  max-width: 1170px;
+}
+
+.photo__big {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.photo__small {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.photo__small img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+}
+
+.svg__content {
+  position: relative;
+  overflow: visible;
+}
+
+.svg__cup {
+  position: absolute;
+  top: -1308px;
+  left: -301px;
+}
+
+.svg__bowl {
+  position: absolute;
+  top: -1085px;
+  right: -300px;
+}
+
+.svg__tort {
+  position: absolute;
+  top: -408px;
+  right: -255px;
+}
+
+/* Скрываем все секции кроме блока с неоном */
+main > *:not(.neon) {
+  opacity: 0;
+}
+
+/* school */
+.school {
+  margin-bottom: 285px;
+}
+
+.school__fon {
+  position: relative;
+}
+
+.school__fon::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/fon-school.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1710px;
+  height: 1394px;
+  right: 100px;
+  z-index: -1;
+}
+
+.school__text {
+  padding-top: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 80px;
+}
+
+.title__school {
+  font-family: "Neusa";
+  max-width: 800px;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 98%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.title__school::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/svg-line-school.svg");
+  background-repeat: no-repeat;
+  width: 727px;
+  height: 216px;
+  top: -285px;
+}
+
+.tort__svg {
+  position: relative;
+  overflow: visible;
+}
+
+.tort__school {
+  position: absolute;
+  top: -1113px;
+  left: 143px;
+}
+
+.content__school {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 45px;
+  margin-bottom: 60px;
+}
+
+.training {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 85px 12px 1fr;
+  grid-template-columns: 85px 1fr; /* иконка + текст */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+  gap: 12px;
+}
+
+.training__img {
+  margin-right: 25px;
+}
+
+.students__desc {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 108%;
+  text-transform: uppercase;
+  width: 300px;
+  color: var(--color-white);
+}
+
+.school__video {
+  margin-bottom: 45px;
+}
+
+.school__decs {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 216%;
+  text-align: center;
+  color: var(--color-white);
+  margin-bottom: 70px;
+}
+
+.school__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.school__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 193%;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  color: var(--color-black);
+  padding: 16px 86px;
+  background-color: var(--color-yellow);
+  border-radius: 68px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.school__button:hover {
+  color: #111;
+  text-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28;
+  -webkit-box-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28, 0 0 80px #e5bc28;
+          box-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28, 0 0 80px #e5bc28;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+/* form */
+.school__form {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.content__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 180px 80px 80px 80px;
+}
+
+.form__text {
+  margin-right: 115px;
+}
+
+.school__form::before {
+  content: "";
+  background-image: url("../icons/fon-form.svg");
+  position: absolute;
+  width: 1200px;
+  height: 410px;
+  z-index: -1;
+  right: 375px;
+  top: 55px;
+}
+
+.title__form {
+  position: relative;
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98%;
+  text-transform: uppercase;
+  color: var(--color-black);
+  margin-bottom: 20px;
+}
+
+.title__form::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/fon-title-form.svg");
+  background-repeat: no-repeat;
+  width: 590px;
+  height: 100px;
+  z-index: -1;
+  top: -12px;
+  right: 5px;
+}
+
+.desc__form--title {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 195%;
+  color: #171717;
+  max-width: 570px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form input {
+  margin-bottom: 20px;
+  width: 330px;
+  height: 60px;
+  padding-left: 35px;
+  background-color: var(--color-white);
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 193%;
+  color: #acacac;
+  border-radius: 68px;
+}
+
+.form__btn {
+  cursor: pointer;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 193%;
+  letter-spacing: 0.12em;
+  text-align: center;
+  color: #fff;
+  padding: 16px 55px;
+  background-color: var(--color-black);
+  border-radius: 68px;
+}
+
+.form__img {
+  position: relative;
+  overflow: visible;
+}
+
+.form__svg--topLeft {
+  position: absolute;
+  top: -370px;
+}
+
+.form__svg--bottomLeft {
+  position: absolute;
+  top: -93px;
+  left: 20px;
+}
+
+.form__svg--topRight {
+  position: absolute;
+  top: -433px;
+  right: 445px;
+}
+
+.form__svg--bottomRight {
+  position: absolute;
+  top: -138px;
+  right: 545px;
+}
+
+/* products */
+.products {
+  margin-bottom: 100px;
+}
+
+.products__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.title__products {
+  position: relative;
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98%;
+  text-transform: uppercase;
+  color: var(--color-black);
+  margin-bottom: 20px;
+}
+
+.title__products::before {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/product-fon-title.svg");
+  width: 267px;
+  height: 94px;
+  z-index: -1;
+  top: -11px;
+  left: -23px;
+}
+
+.desc__products {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 195%;
+  color: var(--color-white);
+  max-width: 570px;
+}
+
+.products__btn {
+  cursor: pointer;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 193%;
+  letter-spacing: 0.12em;
+  text-align: center;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  border-radius: 68px;
+  padding: 14px 78px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.products__btn:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.products__card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.card__title {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin: 30px 0 30px 0;
+}
+
+.card__desc {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 190%;
+  color: var(--color-white);
+}
+
+/* footer */
+.footer {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.footer::before {
+  position: absolute;
+  content: "";
+  background-image: url("../icons/fon-footer.svg");
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.content__footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 100px;
+  padding-bottom: 82px;
+}
+
+.footer__left {
+  margin-right: 200px;
+}
+
+.title__footer {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 98%;
+  text-transform: uppercase;
+  color: var(--color-black);
+  margin-bottom: 36px;
+}
+
+.decs__footer {
+  font-family: "Inter";
+  font-weight: 500;
+  max-width: 370px;
+  font-size: 18px;
+  line-height: 190%;
+  color: var(--color-black);
+  margin-bottom: 67px;
+}
+
+.content__footer::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 49%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1170px;
+  height: 1px;
+  background: var(--color-black);
+  opacity: 0.3;
+  margin-bottom: 40px;
+}
+
+.footer__left--tell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content__footer--title {
+  font-family: "Neusa";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 98%;
+  letter-spacing: 0.33em;
+  text-transform: uppercase;
+  color: rgba(23, 23, 23, 0.3);
+  margin-bottom: 8px;
+}
+
+.footer__left--tell a {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 190%;
+  color: var(--color-black);
+}
+
+.footer__center {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 130px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 130px;
+}
+
+.center__address {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  color: var(--color-black);
+}
+
+.center__mail a {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  color: var(--color-black);
+}
+
+.center__seti--svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center__seti--svg a {
+  margin-right: 23px;
+}
+
+.center__location--svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__content--bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__li {
+  margin-right: 20px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.footer__prava {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 190%;
+  color: var(--color-black);
+}

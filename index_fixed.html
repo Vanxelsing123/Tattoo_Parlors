@@ -1,32 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Кольня — тату и кофе. Студия татуировки, кофе и креатива." />
 		<title>Кольня тату и кофе</title>
 		<link rel="icon" href="icons/favicons/favicon.ico" sizes="any" />
 		<link rel="icon" href="icons/favicons/favicon.svg" type="image/svg+xml" />
-		<link
-			rel="icon"
-			type="icons/favicons/favicon-32x32.png"
-			sizes="32x32"
-			href="/favicon-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="icons/favicons/favicon-16x16.png"
-			sizes="16x16"
-			href="/favicon-16x16.png"
-		/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 		<link rel="stylesheet" href="styles/external/preflight-dist.css" />
 		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="stylesheet" href="styles/media/media.css" />
 	</head>
 	<body>
 		<header class="header">
 			<div class="container">
-				<a class="header__logo" href="/index.html">
+				<a class="header__logo" href="index.html">
 					<img src="icons/logo_3_white 1.svg" alt="Logo" />
 				</a>
+				<div class="burger" aria-label="Меню" aria-expanded="false" role="button" tabindex="0">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 				<nav class="navigation">
 					<ul class="header__item list-reset">
 						<li class="header__li">
@@ -54,7 +51,17 @@
 							<a href="#" class="header__link"> Контакты</a>
 						</li>
 					</ul>
+					<div class="email__holder">
+						<a href="mailto:kolnyatattoo@gmail.com" class="email__item"> kolnyatattoo@gmail.com </a>
+						<div class="seti__svg">
+							<a href=""><img src="images/mask-instagram.png" alt="" /></a>
+							<a href=""><img src="images/mask-vk.png" alt="" /></a>
+							<a href=""><img src="images/mask-yotube.png" alt="" /></a>
+							<a href=""><img src="images/mask-tg.png" alt="" /></a>
+						</div>
+					</div>
 				</nav>
+				<!-- Бургер -->
 			</div>
 		</header>
 		<main id="main">
@@ -222,28 +229,49 @@
 			</section>
 			<section class="portfolio">
 				<div class="container">
-					<div class="portfolio__text">
-						<h2 class="title__portfolio">ПОРТФОЛИО</h2>
-						<p class="title__text">
-							Наши ученики очень довольны пройденым курсом по татуировкам. Посмотрите, какие у них
-							получились результаты
-						</p>
-					</div>
-					<div class="portfolio__photo">
-						<img src="images/tatu/tatu.png" alt="tatu" />
-						<img src="images/tatu/tatu (2).png" alt="tatu" />
-						<img src="images/tatu/tatu (3).png" alt="tatu" />
-						<img src="images/tatu/tatu (4).png" alt="tatu" />
-						<img src="images/tatu/tatu (5).png" alt="tatu" />
-						<img src="images/tatu/tatu (6).png" alt="tatu" />
-						<img src="images/tatu/tatu (7).png" alt="tatu" />
-						<img src="images/tatu/tatu (8).png" alt="tatu" />
-						<img src="images/tatu/tatu (9).png" alt="tatu" />
-						<img src="images/tatu/tatu (10).png" alt="tatu" />
-						<img src="images/tatu/tatu (11).png" alt="tatu" />
-						<img src="images/tatu/tatu (12).png" alt="tatu" />
-						<img src="images/tatu/tatu (13).png" alt="tatu" />
-						<img src="images/tatu/tatu (14).png" alt="tatu" />
+					<div class="content__portfolio">
+						<div class="portfolio__text">
+							<h2 class="title__portfolio">ПОРТФОЛИО</h2>
+							<p class="title__text">
+								Наши ученики очень довольны пройденым курсом по татуировкам. Посмотрите, какие у них
+								получились результаты
+							</p>
+						</div>
+						<div class="portfolio__photo">
+							<img src="images/tatu/tatu.png" alt="tatu" />
+							<img src="images/tatu/tatu (2).png" alt="tatu" />
+							<img src="images/tatu/tatu (3).png" alt="tatu" />
+							<img src="images/tatu/tatu (4).png" alt="tatu" />
+							<img src="images/tatu/tatu (5).png" alt="tatu" />
+							<img src="images/tatu/tatu (6).png" alt="tatu" />
+							<img src="images/tatu/tatu (7).png" alt="tatu" />
+							<img src="images/tatu/tatu (8).png" alt="tatu" />
+							<img src="images/tatu/tatu (9).png" alt="tatu" />
+							<img src="images/tatu/tatu (10).png" alt="tatu" />
+							<img src="images/tatu/tatu (11).png" alt="tatu" />
+							<img src="images/tatu/tatu (12).png" alt="tatu" />
+							<img src="images/tatu/tatu (13).png" alt="tatu" />
+							<img src="images/tatu/tatu (14).png" alt="tatu" />
+						</div>
+						<div class="mob__photo">
+							<div class="portfolio__photo-mob">
+								<img src="images/tatu/tatu.png" alt="tatu" />
+								<img src="images/tatu/tatu (2).png" alt="tatu" />
+								<img src="images/tatu/tatu (3).png" alt="tatu" />
+								<img src="images/tatu/tatu (4).png" alt="tatu" />
+								<img src="images/tatu/tatu (5).png" alt="tatu" />
+								<img src="images/tatu/tatu (6).png" alt="tatu" />
+								<img src="images/tatu/tatu (7).png" alt="tatu" />
+								<img src="images/tatu/tatu (8).png" alt="tatu" />
+								<img src="images/tatu/tatu (9).png" alt="tatu" />
+								<img src="images/tatu/tatu (10).png" alt="tatu" />
+								<img src="images/tatu/tatu (11).png" alt="tatu" />
+								<img src="images/tatu/tatu (12).png" alt="tatu" />
+								<img src="images/tatu/tatu (13).png" alt="tatu" />
+								<img src="images/tatu/tatu (14).png" alt="tatu" />
+							</div>
+							<button class="portfolio__btn">Показать ещё</button>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -278,7 +306,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="reviews">
+			<!-- <section class="reviews">
 				<div class="container__reviews">
 					<div class="reviews__text">
 						<h2 class="title__reviews">ОТЗЫВЫ КЛИЕНТОВ</h2>
@@ -504,9 +532,9 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section>   -->
 		</main>
-		<footer class="footer">
+		<!-- <footer class="footer">
 			<div class="container">
 				<div class="content__footer">
 					<div class="footer__left">
@@ -594,10 +622,12 @@
 					</ul>
 				</div>
 			</div>
-		</footer>
+		</footer> -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
+		<script defer src="js/photo.js"></script>
+		<script defer src="js/burger.js"></script>
 		<script defer src="js/script.js"></script>
 	</body>
 </html>

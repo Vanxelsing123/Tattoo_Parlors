@@ -109,6 +109,10 @@ body {
 
 /* header */
 
+.burger {
+	display: none;
+}
+
 .header {
 	margin-top: 70px;
 	margin-bottom: 80px;
@@ -166,6 +170,7 @@ body {
 	text-transform: uppercase;
 	text-align: center;
 	color: var(--color-white);
+	z-index: -1;
 }
 
 /* studio */
@@ -481,6 +486,10 @@ body {
 }
 
 /* portfolio */
+
+.mob__photo {
+	display: none;
+}
 
 .portfolio {
 	margin-bottom: 30px;
