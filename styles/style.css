@@ -173,6 +173,10 @@ body {
 	z-index: -1;
 }
 
+.email__holder {
+	display: none;
+}
+
 /* studio */
 
 .studio {
