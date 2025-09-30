@@ -9,6 +9,11 @@
 		<link rel="icon" href="icons/favicons/favicon.svg" type="image/svg+xml" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+
 		<link rel="stylesheet" href="styles/external/preflight-dist.css" />
 		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="stylesheet" href="styles/media/media.css" />
@@ -94,7 +99,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="master" class="master">
+			<section id="master" class="master wow animate__animated animate__fadeInRight">
 				<div class="master__text">
 					<h2 class="title__master">МАСТЕРА</h2>
 					<p class="text__master">
@@ -648,6 +653,10 @@
 		</footer>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		<script>
+			new WOW().init()
+		</script>
 
 		<script defer src="js/photo.js"></script>
 		<script defer src="js/burger.js"></script>
