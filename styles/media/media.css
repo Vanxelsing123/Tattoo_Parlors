@@ -692,10 +692,6 @@
 		display: none;
 	}
 
-	.title__coffe {
-		color: var(--color-white);
-	}
-
 	.title__coffe--text {
 		font-size: 16px;
 	}
@@ -758,10 +754,45 @@
 	.remove__tatu {
 		background-color: var(--color-yellow);
 		padding: 20px;
+		border-radius: 20px;
 	}
 
 	.remove__item li::marker {
 		color: var(--color-black);
+	}
+	.reviews {
+		background-color: var(--color-black);
+		padding: 20px;
+		border-radius: 20px;
+	}
+
+	.coffe {
+		background-color: var(--color-yellow);
+		padding: 20px;
+		border-radius: 20px;
+	}
+
+	.school {
+		background-color: var(--color-black);
+		padding: 20px;
+		border-radius: 20px;
+	}
+
+	.title__products::before {
+		width: 170px;
+		left: -9px;
+	}
+
+	.card__title {
+		font-size: 20px;
+	}
+
+	.card__desc {
+		font-size: 15px;
+	}
+
+	.card img {
+		max-width: 150px;
 	}
 }
 
