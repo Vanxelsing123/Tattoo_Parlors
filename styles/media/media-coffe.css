@@ -1,0 +1,179 @@
+@media (max-width: 1024px) {
+	.burger {
+		top: 15px;
+	}
+
+	.menu__title {
+		font-size: 50px;
+	}
+
+	.menu__title::before {
+		width: 160px;
+		height: 75px;
+	}
+
+	.menu__photo {
+		flex-direction: column;
+	}
+
+	.menu__cezon {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.title__studio {
+		font-size: 50px;
+	}
+
+	.title__studio::before {
+		height: 80%;
+	}
+
+	.text__studio {
+		margin-bottom: 50px;
+	}
+
+	.studio__master {
+		padding: 0;
+		background-color: var(--color-yellow);
+	}
+
+	.history__img {
+		flex-direction: column;
+	}
+
+	.studio__title::before {
+		display: none;
+	}
+
+	.studio__title {
+		font-size: 50px;
+	}
+
+	.content__studio {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.master__photo {
+		max-width: 250px;
+		margin-bottom: 20px;
+	}
+
+	.master__photo img {
+		max-width: 250px;
+	}
+
+	.students__desc {
+		font-size: 50px;
+	}
+
+	.soc__master {
+		justify-content: center;
+	}
+
+	.reviews::before {
+		display: none;
+	}
+
+	.reviews {
+		background-color: black;
+	}
+
+	.reviews__title {
+		font-size: 50px;
+	}
+
+	.reviews__desc {
+		font-size: 16px;
+	}
+
+	.reviews__content {
+		flex-direction: column;
+	}
+	.reviews__card {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.reviews__card:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.history {
+		padding: 20px 0 20px 0;
+		background-color: var(--color-white);
+	}
+
+	.title__history::before {
+		display: none;
+	}
+
+	.title__history {
+		font-size: 50px;
+		margin-bottom: 20px;
+	}
+
+	.history__text {
+		flex-direction: column;
+	}
+
+	.text__studio--history {
+		color: var(--color-black);
+		font-size: 16px;
+	}
+
+	.history__img {
+		max-width: 500px;
+	}
+	.history__img img {
+		margin-bottom: 20px;
+	}
+
+	.history__img img:last-child {
+		margin-bottom: 0;
+	}
+
+	.content__reviews {
+		padding-top: 40px;
+	}
+
+	.reviews {
+		margin-top: 60px;
+	}
+}
+
+@media (max-width: 425px) {
+	.header__item {
+		margin-top: 50px;
+	}
+
+	.title__studio::before {
+		height: 115%;
+	}
+
+	.content__reviews {
+		padding: 20px;
+	}
+	.photo__gradient {
+		display: none;
+	}
+	.master__photo img {
+		max-width: 180px;
+	}
+
+	.studio__desc {
+		font-size: 40px;
+	}
+
+	.students__desc--master {
+		font-size: 16px;
+	}
+
+	.content__studio {
+		margin-bottom: -45px;
+	}
+}

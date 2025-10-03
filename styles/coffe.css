@@ -31,14 +31,6 @@
 	right: -30px;
 }
 
-main > *:not(.neon) {
-	opacity: 1;
-}
-
-.animate {
-	opacity: 0;
-}
-
 .menu__photo {
 	margin-top: 70px;
 	display: flex;

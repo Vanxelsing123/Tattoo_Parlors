@@ -714,7 +714,7 @@
 		padding: 16px 25px;
 	}
 	.content__footer::after {
-		max-width: 425px;
+		max-width: 420px;
 	}
 
 	.content__footer {
@@ -822,5 +822,15 @@
 	}
 	.remove__title--text::before {
 		right: -69px;
+	}
+
+	.content__footer::after {
+		max-width: 370px;
+	}
+}
+
+@media (max-width: 320px) {
+	.content__footer::after {
+		max-width: 317px;
 	}
 }

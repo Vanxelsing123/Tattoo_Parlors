@@ -1,0 +1,122 @@
+@media (max-width: 1024px) {
+	.studio__master::before {
+		display: none;
+	}
+	.studio__master {
+		background-color: var(--color-yellow);
+		padding: 20px;
+	}
+
+	.coffe__svg::before {
+		display: none;
+	}
+	.remove__tatu {
+		position: relative;
+		z-index: -1;
+	}
+	.header {
+		margin-top: 20px;
+	}
+	.remove__title--text {
+		color: black;
+	}
+}
+
+@media (max-width: 768px) {
+	.studio__title::before {
+		display: none;
+	}
+
+	.studio__title {
+		font-size: 50px;
+	}
+
+	.content__studio {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.master__photo {
+		max-width: 250px;
+		margin-bottom: 20px;
+	}
+
+	.master__photo img {
+		max-width: 250px;
+	}
+
+	.students__desc {
+		font-size: 50px;
+	}
+
+	.soc__master {
+		justify-content: center;
+	}
+
+	.reviews::before {
+		display: none;
+	}
+
+	.reviews {
+		background-color: black;
+	}
+
+	.reviews__title {
+		font-size: 50px;
+	}
+
+	.reviews__desc {
+		font-size: 16px;
+	}
+
+	.reviews__content {
+		flex-direction: column;
+	}
+	.reviews__card {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.reviews__card:last-child {
+		margin-bottom: 0;
+	}
+
+	.portfolio__studia--photo {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 425px) {
+	.photo__gradient {
+		display: none;
+	}
+
+	.master__photo img {
+		max-height: 300px;
+	}
+
+	.studio__title {
+		font-size: 40px;
+	}
+
+	.studio__desc {
+		font-size: 40px;
+	}
+
+	.portfolio__studia--photo {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.content__reviews {
+		padding: 60px 10px 30px 10px;
+	}
+
+	.studio__master {
+		padding: 20px 0 20px 0;
+	}
+
+	.portfolio__studia--photo {
+		display: none;
+	}
+}
