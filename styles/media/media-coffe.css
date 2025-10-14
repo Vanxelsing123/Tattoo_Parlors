@@ -176,4 +176,10 @@
 	.content__studio {
 		margin-bottom: -45px;
 	}
+	.desk__title {
+		display: none;
+	}
+	.mob__title {
+		display: block;
+	}
 }

@@ -193,6 +193,10 @@
 	margin-right: 23px;
 }
 
+.mob__title {
+	display: none;
+}
+
 /* .history */
 
 .studio__content {
@@ -353,4 +357,34 @@
 
 .studio__btn {
 	margin-left: auto;
+}
+
+/* button-scrol */
+
+.scroll-top {
+	position: fixed;
+	bottom: 40px;
+	right: 30px;
+	width: 70px;
+	height: 70px;
+	border: none;
+	border-radius: 50%;
+	background-color: var(--color-white);
+	color: var(--color-black);
+	font-size: 24px;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+	z-index: 999;
+}
+
+.scroll-top:hover {
+	transform: scale(1.1);
+}
+
+.scroll-top.show {
+	opacity: 1;
+	visibility: visible;
 }

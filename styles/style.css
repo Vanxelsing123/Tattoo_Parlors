@@ -326,7 +326,7 @@ main > * {
 }
 
 .portfolio__master {
-	padding: 0 10px 170px 50px;
+	padding: 0 0 170px 0;
 }
 
 .title__master {
@@ -1004,6 +1004,10 @@ main > * {
 	margin-bottom: 100px;
 }
 
+.coffe__btn {
+	display: none;
+}
+
 .title__coffe {
 	font-family: 'Neusa';
 	font-weight: 700;
@@ -1426,6 +1430,10 @@ main > * {
 	color: var(--color-white);
 }
 
+.mob__btn {
+	display: none;
+}
+
 /* footer */
 
 .footer {
@@ -1574,4 +1582,34 @@ main > * {
 	font-size: 14px;
 	line-height: 190%;
 	color: var(--color-black);
+}
+
+/* button-scrol */
+
+.scroll-top {
+	position: fixed;
+	bottom: 40px;
+	right: 30px;
+	width: 70px;
+	height: 70px;
+	border: none;
+	border-radius: 50%;
+	background-color: var(--color-white);
+	color: var(--color-black);
+	font-size: 24px;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+	z-index: 999;
+}
+
+.scroll-top:hover {
+	transform: scale(1.1);
+}
+
+.scroll-top.show {
+	opacity: 1;
+	visibility: visible;
 }

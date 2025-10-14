@@ -20,6 +20,12 @@
 	.remove__title--text {
 		color: black;
 	}
+	.burger {
+		top: 15px;
+	}
+	.navigation {
+		top: -15px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -96,6 +102,10 @@
 		max-height: 300px;
 	}
 
+	.studio__master {
+		margin-bottom: 80px;
+	}
+
 	.studio__title {
 		font-size: 40px;
 	}
@@ -106,6 +116,21 @@
 
 	.portfolio__studia--photo {
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.portfolio__studia {
+		margin-bottom: 20px;
+	}
+
+	.reviews {
+		margin-top: 60px;
+	}
+
+	.studio__btn {
+		background-color: var(--color-white);
+		color: var(--color-black);
+		margin-top: 0;
+		margin-left: 0;
 	}
 
 	.content__reviews {

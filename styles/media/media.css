@@ -44,9 +44,6 @@
 		transition: 0.3s;
 	}
 
-	.portfolio__btn:hover {
-		background: #e6b800;
-	}
 	.svg__content {
 		display: none;
 	}
@@ -338,19 +335,20 @@
 
 	.portfolio__btn {
 		margin: 20px auto 0;
+		font-weight: 700;
 		display: block;
 		padding: 10px 20px;
 		font-size: 16px;
-		background: var(--color-yellow);
+		background: var(--color-white);
 		border: none;
 		border-radius: 8px;
 		cursor: pointer;
 		font-weight: bold;
-		transition: 0.3s;
+		transition: transform 0.3s ease;
 	}
 
 	.portfolio__btn:hover {
-		background: #e6b800;
+		transform: scale(1.05);
 	}
 
 	.portfolio__text {
@@ -488,6 +486,8 @@
 	}
 
 	.school__button {
+		background-color: var(--color-white);
+		color: var(--color-black);
 		padding: 16px 45px;
 	}
 	.title__form::before {
@@ -641,6 +641,11 @@
 		left: -45px;
 	}
 
+	.master__li button {
+		background-color: var(--color-white);
+		color: var(--color-black);
+	}
+
 	.remove__title {
 		font-size: 50px;
 	}
@@ -659,7 +664,19 @@
 	}
 
 	.remove__btn {
+		box-shadow: none;
+		background-color: var(--color-black);
+		color: var(--color-white);
 		padding: 13px 30px;
+	}
+
+	.remove__text--magic {
+		color: var(--color-black);
+	}
+
+	.remove__li {
+		color: var(--color-black);
+		line-height: 200%;
 	}
 
 	.reviews {
@@ -711,6 +728,8 @@
 	}
 
 	.form__btn {
+		background-color: var(--color-white);
+		color: var(--color-black);
 		padding: 16px 25px;
 	}
 	.content__footer::after {
@@ -772,6 +791,22 @@
 		border-radius: 20px;
 	}
 
+	.coffe__btn {
+		display: block;
+		margin: 20px auto 0;
+		cursor: pointer;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 193%;
+		letter-spacing: 0.12em;
+		text-align: center;
+		color: var(--color-white);
+		padding: 13px 100px;
+		background-color: var(--color-black);
+		border-radius: 68px;
+		border: none;
+	}
+
 	.school {
 		background-color: var(--color-black);
 		padding: 20px;
@@ -794,6 +829,17 @@
 	.card img {
 		max-width: 150px;
 	}
+
+	.desk__btn {
+		display: none;
+	}
+
+	.mob__btn {
+		margin-top: 30px;
+		background-color: var(--color-white);
+		color: var(--color-black);
+		display: block;
+	}
 }
 
 /* ================= Минимальные экраны ================= */
@@ -802,6 +848,8 @@
 		width: 120px;
 	}
 	.studio__btn {
+		background-color: var(--color-white);
+		color: var(--color-black);
 		padding: 12px 15px;
 	}
 	.master__img--petrova::before {
