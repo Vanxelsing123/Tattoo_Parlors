@@ -11,11 +11,16 @@ burger.addEventListener('click', () => {
 	body.classList.toggle('no-scroll', nav.classList.contains('active'))
 })
 
-// ===== Скролл хедера =====
+// ===== Скролл хедера (только desktop) =====
 window.addEventListener('scroll', () => {
-	if (window.scrollY > 50) {
-		header.classList.add('scrolled')
+	if (window.innerWidth > 1024) {
+		if (window.scrollY > 50) {
+			header.classList.add('scrolled')
+		} else {
+			header.classList.remove('scrolled')
+		}
 	} else {
+		// если пользователь вернулся на мобилку — убираем класс
 		header.classList.remove('scrolled')
 	}
 })
@@ -25,16 +30,12 @@ links.forEach(link => {
 	link.addEventListener('click', e => {
 		const href = link.getAttribute('href')
 
-		// Если якорь (#...), то плавный скролл
 		if (href.startsWith('#')) {
 			e.preventDefault()
 			const target = document.querySelector(href)
-			if (target) {
-				target.scrollIntoView({ behavior: 'smooth' })
-			}
+			if (target) target.scrollIntoView({ behavior: 'smooth' })
 		}
 
-		// Закрываем меню только если оно открыто (бургер активен)
 		if (nav.classList.contains('active')) {
 			nav.classList.remove('active')
 			burger.classList.remove('active')

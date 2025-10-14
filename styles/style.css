@@ -144,8 +144,29 @@ main > * {
 }
 
 .header {
+	position: relative;
+	margin-bottom: 30px;
 	margin-top: 30px;
-	margin-bottom: 80px;
+	width: 100%;
+	z-index: 1000;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.header.scrolled {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin-top: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: rgba(0, 0, 0, 0.9);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	backdrop-filter: blur(6px);
+}
+
+.header.scrolled + * {
+	margin-top: 300px;
 }
 
 .header__logo {
