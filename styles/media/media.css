@@ -840,6 +840,10 @@
 		color: var(--color-black);
 		display: block;
 	}
+
+	.center__location--svg a {
+		margin-right: 25px;
+	}
 }
 
 /* ================= Минимальные экраны ================= */
