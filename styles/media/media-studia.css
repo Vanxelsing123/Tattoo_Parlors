@@ -93,7 +93,7 @@
 	}
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
 	.photo__gradient {
 		display: none;
 	}

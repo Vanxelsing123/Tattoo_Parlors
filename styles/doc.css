@@ -1,0 +1,51 @@
+.doc-modal {
+	position: fixed;
+	inset: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 9999;
+	padding: 40px 20px;
+}
+
+.doc-modal.active {
+	display: flex;
+	animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+	background: #fff;
+	border-radius: 10px;
+	max-width: 900px;
+	width: 100%;
+	padding: 30px;
+	position: relative;
+	max-height: 80vh;
+	overflow-y: auto;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	font-size: 28px;
+	color: #333;
+	cursor: pointer;
+}
+
+body.no-scroll {
+	overflow: hidden;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

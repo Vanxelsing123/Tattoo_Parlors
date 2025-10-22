@@ -1,0 +1,78 @@
+/* === МОДАЛКА (общий контейнер) === */
+.theme-modal {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	pointer-events: none;
+	opacity: 0;
+	z-index: 99999;
+	background: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease;
+}
+
+/* Активная модалка */
+.theme-modal.modal-open {
+	transform: translate(-50%, -50%) scale(1);
+	pointer-events: all;
+	opacity: 1;
+}
+
+/* === ВНУТРЕННИЙ БЛОК (белое окно) === */
+.theme-modal .modal-content {
+	background: #fff;
+	border-radius: 18px;
+	max-width: 900px;
+	width: 90%;
+	max-height: 80vh;
+	overflow-y: auto;
+	padding: 40px;
+	color: var(--card, #000);
+	position: relative;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* === Кнопка закрытия === */
+.theme-modal .close-modal {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 24px;
+	height: 24px;
+	background: url('../../icons/close-modal.svg') no-repeat center/contain;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+}
+.theme-modal .close-modal:hover {
+	opacity: 0.7;
+}
+
+/* === Текстовые стили === */
+.theme-modal.text-modal .title {
+	text-align: center;
+	font-family: 'Neusa', sans-serif;
+	font-size: clamp(18px, calc(0.02875 * 100vw + 8.8px), 64px);
+	font-weight: 600;
+	line-height: 98.2%;
+	color: var(--card, #000);
+	margin-bottom: 20px;
+}
+
+.theme-modal.text-modal .desc,
+.theme-modal .modal-body {
+	font-family: 'Inter', sans-serif;
+	font-size: clamp(14px, calc(0.00375 * 100vw + 12.8px), 20px);
+	font-weight: 500;
+	line-height: 170%;
+	color: var(--card, #000);
+	text-align: justify;
+}
+
+.theme-modal.text-modal.doc-modal p {
+	margin-bottom: 15px;
+}

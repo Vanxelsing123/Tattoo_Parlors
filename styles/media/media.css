@@ -337,11 +337,11 @@
 		margin: 20px auto 0;
 		font-weight: 700;
 		display: block;
-		padding: 10px 20px;
+		padding: 18px 90px;
 		font-size: 16px;
 		background: var(--color-white);
 		border: none;
-		border-radius: 8px;
+		border-radius: 68px;
 		cursor: pointer;
 		font-weight: bold;
 		transition: transform 0.3s ease;
@@ -598,7 +598,7 @@
 	}
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
 	.container {
 		padding: 0 20px;
 	}
@@ -843,6 +843,19 @@
 
 	.center__location--svg a {
 		margin-right: 25px;
+	}
+
+	.docs-holder {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.docs-holder button {
+		color: white;
+	}
+
+	.theme-modal .modal-content {
+		width: 70%;
 	}
 }
 

@@ -11,6 +11,8 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
 		<link rel="stylesheet" href="styles/external/preflight-dist.css" />
+		<link rel="stylesheet" href="styles/doc.css" />
+		<link rel="stylesheet" href="styles/docs/style-docs.css" />
 		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="stylesheet" href="styles/media/media.css" />
 	</head>
@@ -40,7 +42,7 @@
 							<a href="studia.html" class="header__link">УДАЛЕНИЕ ТАТУ</a>
 						</li>
 						<li class="header__li">
-							<a href="#school" class="header__link"> ОБУЧЕНИЕ</a>
+							<a href="https://kolnyaschool.ru/" class="header__link"> ОБУЧЕНИЕ</a>
 						</li>
 						<li class="header__li">
 							<a href="coffe.html" class="header__link">КОФЕЙНЯ</a>
@@ -421,7 +423,7 @@
 						средствам уклона на стилистику, предпочитаемую студентом.
 					</div>
 					<div class="school__btn">
-						<button class="school__button">ХОЧУ УЧИТЬСЯ!</button>
+						<a href="https://kolnyaschool.ru/" class="school__button">ХОЧУ УЧИТЬСЯ!</a>
 					</div>
 				</div>
 				<div class="tort__svg">
@@ -634,7 +636,11 @@
 						<div class="center__location">
 							<p class="content__footer--title">ЛОКАЦИЯ</p>
 							<div class="center__location--svg">
-								<a href="https://www.instagram.com/kolnya_tattoo/" target="_blank" rel="noopener">
+								<a
+									href="https://2gis.ru/vologda/geo/70000001034301876"
+									target="_blank"
+									rel="noopener"
+								>
 									<picture>
 										<source media="(max-width: 1440px)" srcset="icons/svg-adaptiv/2GIS_logo.svg" />
 										<img src="icons/2gis.svg" alt="Instagram" />
@@ -657,36 +663,26 @@
 				</div>
 				<div class="footer__content--bottom">
 					<p class="footer__prava">© 2022. Тату-студия “Кольня”. Все права защищены.</p>
-					<ul class="footer__item">
-						<li class="footer__li">
-							<a class="footer__link" href="">НАША СТУДИЯ </a>
-						</li>
-						<li class="footer__li">
-							<a class="footer__link" href="">Отзывы</a>
-						</li>
-						<li class="footer__li">
-							<a class="footer__link" href="">МАСТЕРА </a>
-						</li>
-						<li class="footer__li">
-							<a class="footer__link" href=""> УДАЛЕНИЕ ТАТУ</a>
-						</li>
-						<li class="footer__li">
-							<a class="footer__link" href="">ОБУЧЕНИЕ</a>
-						</li>
-						<li class="footer__li">
-							<a class="footer__link" href="">КОФЕЙНЯ</a>
-						</li>
-						<li class="footer__li">
-							<a class="footer__link" href="">ТОВАРЫ</a>
-						</li>
-						<li class="footer__li">
-							<a class="footer__link" href="">Контакты</a>
-						</li>
-					</ul>
+					<div class="docs-holder">
+						<button class="open-modal" data-modal="doc-0">Политика конфиденциальности</button>
+						<button class="open-modal" data-modal="doc-1">
+							Согласие на получение рекламных рассылок
+						</button>
+						<button class="open-modal" data-modal="doc-2">Публичная оферта</button>
+						<button class="open-modal" data-modal="doc-3">
+							Согласие на обработку персональных данных
+						</button>
+					</div>
 				</div>
 			</div>
 		</footer>
 
+		<div id="dynamic-modal" class="theme-modal text-modal doc-modal">
+			<div class="modal-content">
+				<div class="close-modal"></div>
+				<div class="modal-body"></div>
+			</div>
+		</div>
 		<button id="scrollTopBtn" class="scroll-top">&#8679;</button>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -695,6 +691,7 @@
 			gsap.registerPlugin(ScrollTrigger)
 		</script>
 
+		<script src="js/modal.js"></script>
 		<script src="js/button.js"></script>
 		<script defer src="js/animate.js"></script>
 		<script defer src="js/photo.js"></script>

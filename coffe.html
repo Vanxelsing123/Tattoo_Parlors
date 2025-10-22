@@ -24,19 +24,19 @@
 				<nav class="navigation">
 					<ul class="header__item list-reset">
 						<li class="header__li">
-							<a href="studia.html" class="header__link">НАША СТУДИЯ</a>
+							<a href="index.html" class="header__link">НАША СТУДИЯ</a>
 						</li>
 						<li class="header__li">
 							<a href="#reviews" class="header__link">Отзывы </a>
 						</li>
 						<li class="header__li">
-							<a href="#master" class="header__link">МАСТЕРА </a>
+							<a href="#studio__master" class="header__link">БАРИСТЫ</a>
 						</li>
 						<li class="header__li">
-							<a href="#remove__tatu" class="header__link">УДАЛЕНИЕ ТАТУ</a>
+							<a href="studia.html" class="header__link">УДАЛЕНИЕ ТАТУ</a>
 						</li>
 						<li class="header__li">
-							<a href="#school" class="header__link"> ОБУЧЕНИЕ</a>
+							<a href="https://kolnyaschool.ru/" class="header__link"> ОБУЧЕНИЕ</a>
 						</li>
 						<li class="header__li">
 							<a href="coffe.html" class="header__link">КОФЕЙНЯ</a>
@@ -103,7 +103,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="studio__master">
+			<section id="studio__master" class="studio__master">
 				<div class="container">
 					<div class="content__studio">
 						<h2 class="studio__title mob__title">БАРИСТЫ</h2>
@@ -159,7 +159,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="reviews">
+			<section id="reviews" class="reviews">
 				<div class="container coffe__svg">
 					<div class="content__reviews">
 						<div class="text__reviews">
@@ -278,7 +278,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer id="footer" class="footer">
 			<div class="container">
 				<div class="content__footer">
 					<div class="footer__left">
@@ -338,32 +338,16 @@
 				</div>
 				<div class="footer__content--bottom">
 					<p class="footer__prava">© 2022. Тату-студия “Кольня”. Все права защищены.</p>
-					<ul class="footer__item">
-						<li class="footer__li">
-							<a class="footer__link" href="">НАША СТУДИЯ </a>
-						</li>
-						<li class="footer__li">
-							<a class="footer__link" href="">Отзывы</a>
-						</li>
-						<li class="footer__li">
-							<a class="footer__link" href="">МАСТЕРА </a>
-						</li>
-						<li class="footer__li">
-							<a class="footer__link" href=""> УДАЛЕНИЕ ТАТУ</a>
-						</li>
-						<li class="footer__li">
-							<a class="footer__link" href="">ОБУЧЕНИЕ</a>
-						</li>
-						<li class="footer__li">
-							<a class="footer__link" href="">КОФЕЙНЯ</a>
-						</li>
-						<li class="footer__li">
-							<a class="footer__link" href="">ТОВАРЫ</a>
-						</li>
-						<li class="footer__li">
-							<a class="footer__link" href="">Контакты</a>
-						</li>
-					</ul>
+					<div class="docs-holder">
+						<button class="open-modal" data-modal="doc-0">Политика конфиденциальности</button>
+						<button class="open-modal" data-modal="doc-1">
+							Согласие на получение рекламных рассылок
+						</button>
+						<button class="open-modal" data-modal="doc-2">Публичная оферта</button>
+						<button class="open-modal" data-modal="doc-3">
+							Согласие на обработку персональных данных
+						</button>
+					</div>
 				</div>
 			</div>
 		</footer>

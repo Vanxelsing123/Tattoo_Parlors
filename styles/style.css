@@ -1598,6 +1598,7 @@ main > * {
 
 .footer__content--bottom {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -1622,6 +1623,31 @@ main > * {
 	font-size: 14px;
 	line-height: 190%;
 	color: var(--color-black);
+}
+
+.docs-holder {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.docs-holder button {
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 190.2%;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	color: var(--gray);
+	font-size: 14px;
+	cursor: pointer;
+	transition: color 0.3s ease-in;
+}
+
+.docs-holder button:hover {
+	color: #666666;
 }
 
 /* button-scrol */
