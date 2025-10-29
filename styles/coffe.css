@@ -68,6 +68,39 @@
 	align-items: center;
 }
 
+.menu__img-wrapper {
+	position: relative;
+	overflow: hidden;
+	border-radius: 12px;
+}
+
+.menu__img-wrapper img {
+	width: 100%;
+	max-width: 300px;
+	display: block;
+	transition: transform 0.3s ease;
+}
+
+.menu__img-wrapper:hover img {
+	transform: scale(1.05);
+}
+
+.zoom-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2.5rem;
+	color: rgba(255, 255, 255, 0.85);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+}
+
+.menu__img-wrapper:hover .zoom-icon {
+	opacity: 1;
+}
+
 .title__studio {
 	max-width: 500px;
 	background-image: none;
@@ -85,6 +118,54 @@
 	z-index: -1;
 	top: -13px;
 	right: -5px;
+}
+
+/* ===== Модалка ===== */
+.modal {
+	display: none;
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	background-color: rgba(0, 0, 0, 0.8);
+	justify-content: center;
+	align-items: center;
+	animation: fadeIn 0.3s ease forwards;
+}
+
+.modal-content {
+	max-width: 90%;
+	max-height: 90%;
+	border-radius: 10px;
+	animation: zoomIn 0.3s ease forwards;
+}
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 25px;
+	color: white;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes zoomIn {
+	from {
+		transform: scale(0.9);
+		opacity: 0.8;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
 }
 
 /* .master */

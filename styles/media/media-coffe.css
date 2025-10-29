@@ -21,6 +21,11 @@
 		margin-bottom: 20px;
 	}
 
+	.zoom-icon {
+		opacity: 1;
+		font-size: 2rem;
+	}
+
 	.title__studio {
 		font-size: 50px;
 	}
