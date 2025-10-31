@@ -334,10 +334,11 @@
 	}
 
 	.portfolio__btn {
+		text-transform: uppercase;
 		margin: 20px auto 0;
 		font-weight: 700;
 		display: block;
-		padding: 18px 90px;
+		padding: 18px 80px;
 		font-size: 16px;
 		background: var(--color-white);
 		border: none;
@@ -646,6 +647,12 @@
 		color: var(--color-black);
 	}
 
+	.remove__text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.remove__title {
 		font-size: 50px;
 	}
@@ -728,6 +735,7 @@
 	}
 
 	.form__btn {
+		text-transform: uppercase;
 		background-color: var(--color-white);
 		color: var(--color-black);
 		padding: 16px 25px;
@@ -792,6 +800,7 @@
 	}
 
 	.coffe__btn {
+		text-transform: uppercase;
 		display: block;
 		margin: 20px auto 0;
 		cursor: pointer;
