@@ -642,7 +642,7 @@
 		left: -45px;
 	}
 
-	.master__li button {
+	.master__li a {
 		background-color: var(--color-white);
 		color: var(--color-black);
 	}

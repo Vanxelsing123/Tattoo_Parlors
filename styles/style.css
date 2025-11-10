@@ -408,6 +408,7 @@ main > * {
 	overflow: hidden;
 	text-align: center;
 	height: 100%;
+	z-index: 1;
 }
 
 .master__li img {
@@ -492,7 +493,7 @@ main > * {
 	margin: 10px 0 5px;
 }
 
-.master__li button {
+.master__li a {
 	margin-top: 30px;
 	padding: 12px 60px;
 	cursor: pointer;
