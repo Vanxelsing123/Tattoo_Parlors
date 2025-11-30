@@ -420,17 +420,32 @@ main > * {
 	display: block;
 }
 
+.master__img--petrova {
+	width: 290px;
+}
+.master__img--gamova {
+	width: 290px;
+}
+
+.master__img--cat {
+	width: 290px;
+}
+
+.master__img--grom {
+	width: 290px;
+}
+
 .master__img--maksim::before {
 	content: '';
 	position: absolute;
 	background-image: url('../icons/fon-maksim.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 268px;
-	width: 286px;
+	height: 210px;
+	width: 260px;
 	z-index: -1;
-	left: 9px;
-	top: 82px;
+	left: 34px;
+	top: 130px;
 }
 
 .master__img {
@@ -470,10 +485,10 @@ main > * {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 267px;
-	width: 161px;
+	width: 210px;
 	z-index: -1;
 	left: 65px;
-	top: 15px;
+	top: 80px;
 }
 
 .master__img--grom::before {
@@ -699,7 +714,7 @@ main > * {
 /* remove */
 
 .remove__tatu {
-	margin-bottom: 80px;
+	margin-bottom: 260px;
 }
 
 .content__remove {
@@ -884,7 +899,7 @@ main > * {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 250px;
+	padding-top: 190px;
 	margin-bottom: 10px;
 }
 
@@ -1101,6 +1116,10 @@ main > * {
 	border-radius: 4px;
 }
 
+.portfolio__btn {
+	display: none;
+}
+
 .svg__content {
 	position: relative;
 	overflow: visible;
@@ -1127,7 +1146,7 @@ main > * {
 /* school */
 
 .school {
-	margin-bottom: 285px;
+	margin-bottom: 400px;
 }
 
 .school__fon {

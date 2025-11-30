@@ -445,6 +445,32 @@
 	.master__anvil {
 		display: none;
 	}
+
+	.gradient {
+		display: none;
+	}
+
+	.master__img--maksim::before {
+		left: 157px;
+	}
+
+	.master__img--petrova::before {
+		left: 175px;
+	}
+
+	.master__img--gamova::before {
+		left: 180px;
+	}
+
+	.master__img--cat::before {
+		left: 170px;
+	}
+
+	.master__img--grom::before {
+		left: 176px;
+		top: 120px;
+	}
+
 	.portfolio__master {
 		padding: 0 0 30px 0;
 	}
@@ -645,6 +671,30 @@
 	.master__li a {
 		background-color: var(--color-white);
 		color: var(--color-black);
+	}
+
+	.master__img--maksim::before {
+		left: 59px;
+		top: 89px;
+	}
+
+	.master__img--petrova::before {
+		left: 80px;
+	}
+
+	.master__img--gamova::before {
+		left: 85px;
+	}
+
+	.master__img--cat::before {
+		height: 210px;
+		top: 65px;
+		left: 75px;
+	}
+
+	.master__img--grom::before {
+		left: 85px;
+		top: 70px;
 	}
 
 	.remove__text {

@@ -1,5 +1,5 @@
 document.querySelectorAll('.portfolio__btn').forEach(btn => {
-	let container // сюда поместим соответствующий блок с фото
+	let container
 
 	// Определяем, какая кнопка: портфолио или отзывы
 	if (btn.closest('.mob__photo')) {

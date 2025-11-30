@@ -1,9 +1,9 @@
 const masters = {
 	ekaterina: {
-		name: 'Екатерина Максимова',
+		name: 'САША КОТ',
 		title: 'Мастер художественной татуировки',
 		description: 'Екатерина практикуется уже больше 5 лет.',
-		image: 'images/Ekaterina_master.png',
+		image: 'images/SashaKot.png',
 		works: [
 			'images/tatu/tatu.png',
 			'images/tatu/tatu (2).png',
@@ -22,11 +22,11 @@ const masters = {
 	},
 
 	elizaveta: {
-		name: 'Елизавета Петрова',
+		name: 'Екатерина Максимова',
 		title: 'Мастер художественной татуировки',
 		description:
 			'Создаёт уникальные тату в стиле графика и реализм. Индивидуальный подход к каждому клиенту.',
-		image: 'images/Elizaveta_master.png',
+		image: 'images/EkaterinaMakcim.webp',
 		works: [
 			'images/works/elizaveta1.jpg',
 			'images/works/elizaveta2.jpg',
@@ -48,7 +48,7 @@ const masters = {
 		name: 'Полина Гамова',
 		title: 'Мастер художественной татуировки',
 		description: 'Создаёт уникальные тату и миниатюры в стиле минимализм и реализм.',
-		image: 'images/Polina_master.png',
+		image: 'images/PolinaGamova.webp',
 		works: [
 			'images/works/polina1.jpg',
 			'images/works/polina2.jpg',
@@ -67,10 +67,10 @@ const masters = {
 	},
 
 	sasha: {
-		name: 'Саша Кот',
+		name: 'Елизавета Петрова',
 		title: 'Мастер художественной татуировки',
 		description: 'Любит цвет, динамику и креатив. Каждый эскиз уникален и создаётся вручную.',
-		image: 'images/Sasha_master.png',
+		image: 'images/ElizavetaPetrova.webp',
 		works: [
 			'images/works/sasha1.jpg',
 			'images/works/sasha2.jpg',
@@ -92,7 +92,7 @@ const masters = {
 		name: 'Елизавета Громова',
 		title: 'Мастер художественной татуировки',
 		description: 'Работает в стиле реализм и акварель. Более 7 лет опыта в тату-индустрии.',
-		image: 'images/Elizaveta_grom.png',
+		image: 'images/ElizavetaGrom.webp',
 		works: [
 			'images/works/grom1.jpg',
 			'images/works/grom2.jpg',
