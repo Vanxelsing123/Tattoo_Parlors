@@ -64,6 +64,7 @@
 	.master__photo {
 		max-width: 250px;
 		margin-bottom: 20px;
+		margin-right: 0;
 	}
 
 	.master__photo img {

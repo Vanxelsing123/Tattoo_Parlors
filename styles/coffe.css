@@ -176,14 +176,14 @@
 
 .studio__master {
 	position: relative;
-	margin-bottom: 200px;
+	margin-bottom: 270px;
 }
 
 .studio__master::before {
 	content: '';
 	position: absolute;
 	width: 100%;
-	height: 1024px;
+	height: 600px;
 	background-image: url('../icons/fon-barista.svg');
 	background-repeat: no-repeat;
 	z-index: -1;
@@ -200,7 +200,9 @@
 }
 
 .master__photo {
+	max-width: 350px;
 	position: relative;
+	margin-right: 60px;
 }
 
 .photo__gradient {
