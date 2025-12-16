@@ -270,6 +270,21 @@
 		z-index: -1;
 	}
 
+	.studio__img {
+		margin-bottom: 10px;
+	}
+
+	.link__button {
+		display: block;
+		text-align: center;
+		margin-bottom: 40px;
+		height: 50px;
+	}
+
+	.studio__content a {
+		display: none;
+	}
+
 	/* master */
 
 	.master__name {

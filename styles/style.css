@@ -321,6 +321,16 @@ main > * {
 	transform: scale(1.05);
 }
 
+.link__button {
+	display: none;
+}
+
+.description {
+	white-space: pre-line; /* переносы из текста сохраняются */
+	line-height: 1.6; /* межстрочный интервал */
+	margin-bottom: 1em; /* отступ снизу */
+}
+
 /* master */
 
 .master {
