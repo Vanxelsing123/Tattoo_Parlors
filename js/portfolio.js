@@ -28,7 +28,7 @@ const masters = {
 			'images/portfolio/Sasha(9).webp',
 			'images/portfolio/Sasha(2).webp',
 		],
-		socials: { telegram: '#' },
+		socials: { telegram: 'https://vk.com/kolnya' },
 	},
 
 	ekaterina: {
@@ -60,7 +60,7 @@ const masters = {
 			'images/portfolio/Ekaterina(15).webp',
 		],
 		socials: {
-			telegram: '#',
+			telegram: 'https://vk.com/kolnya',
 		},
 	},
 
@@ -91,7 +91,7 @@ const masters = {
 			'images/portfolio/Polina(11).webp',
 		],
 		socials: {
-			telegram: '#',
+			telegram: 'https://vk.com/kolnya',
 		},
 	},
 
@@ -121,7 +121,7 @@ const masters = {
 			'images/portfolio/Liza(7).webp',
 		],
 		socials: {
-			telegram: '#',
+			telegram: 'https://vk.com/kolnya',
 		},
 	},
 
@@ -151,7 +151,7 @@ const masters = {
 			'images/portfolio/Liza-remove(7).webp',
 		],
 		socials: {
-			telegram: '#',
+			telegram: 'https://vk.com/kolnya',
 		},
 	},
 }

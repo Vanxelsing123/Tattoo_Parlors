@@ -1,6 +1,6 @@
 @media (max-width: 1024px) {
 	.burger {
-		top: 7px;
+		top: 23px;
 	}
 	.works__grid {
 		grid-template-columns: repeat(4, 1fr);

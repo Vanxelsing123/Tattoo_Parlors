@@ -98,6 +98,23 @@
 		display: none;
 	}
 
+	.content__title {
+		display: flex;
+		align-items: center;
+	}
+
+	.remove__title {
+		margin-right: 10px;
+	}
+
+	.remove__tatu {
+		margin-bottom: 90px;
+	}
+
+	.remove__text--magic {
+		margin-top: 20px;
+	}
+
 	.master__photo img {
 		max-height: 300px;
 	}
