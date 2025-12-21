@@ -10,41 +10,11 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
-		<link
-			rel="preload"
-			href="styles/external/preflight-dist.css"
-			as="style"
-			onload="this.onload=null;this.rel='stylesheet'"
-		/>
-		<link
-			rel="preload"
-			href="styles/doc.css"
-			as="style"
-			onload="this.onload=null;this.rel='stylesheet'"
-		/>
-		<link
-			rel="preload"
-			href="styles/style.css"
-			as="style"
-			onload="this.onload=null;this.rel='stylesheet'"
-		/>
-
-		<!-- fallback без JS -->
-		<noscript>
-			<link rel="stylesheet" href="styles/external/preflight-dist.css" />
-			<link rel="stylesheet" href="styles/doc.css" />
-			<link rel="stylesheet" href="styles/style.css" />
-		</noscript>
-
-		<!-- 3. Вторичные стили — грузятся асинхронно -->
-		<link
-			rel="stylesheet"
-			href="styles/docs/style-docs.css"
-			media="print"
-			onload="this.media='all'"
-		/>
-
-		<link rel="stylesheet" href="styles/media/media.css" media="print" onload="this.media='all'" />
+		<link rel="stylesheet" href="styles/external/preflight-dist.css" />
+		<link rel="stylesheet" href="styles/doc.css" />
+		<link rel="stylesheet" href="styles/docs/style-docs.css" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="stylesheet" href="styles/media/media.css" />
 	</head>
 	<body class="neon-page">
 		<header class="header">
