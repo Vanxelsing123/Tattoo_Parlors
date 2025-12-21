@@ -692,22 +692,14 @@
 		</div>
 		<button id="scrollTopBtn" class="scroll-top">&#8679;</button>
 
-		<!-- GSAP -->
-		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-		<script
-			defer
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-		></script>
-
-		<script defer>
-			document.addEventListener('DOMContentLoaded', () => {
-				gsap.registerPlugin(ScrollTrigger)
-			})
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+		<script>
+			gsap.registerPlugin(ScrollTrigger)
 		</script>
 
-		<!-- локальные скрипты -->
-		<script defer src="js/modal.js"></script>
-		<script defer src="js/button.js"></script>
+		<script src="js/modal.js"></script>
+		<script src="js/button.js"></script>
 		<script defer src="js/animate.js"></script>
 		<script defer src="js/photo.js"></script>
 		<script defer src="js/burger.js"></script>
