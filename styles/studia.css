@@ -143,6 +143,10 @@
 	gap: 30px;
 }
 
+.gorm__photo {
+	max-width: 370px;
+}
+
 /* reviews */
 
 .reviews {
