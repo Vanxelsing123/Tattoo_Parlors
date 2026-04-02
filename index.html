@@ -17,6 +17,9 @@
 		<link rel="stylesheet" href="styles/media/media.css" />
 	</head>
 	<body class="neon-page">
+		<div id="neon-overlay">
+			<p class="neon__text">будет не больно</p>
+		</div>
 		<header class="header">
 			<div class="container">
 				<a class="header__logo" href="index.html">
@@ -76,9 +79,36 @@
 			</div>
 		</header>
 		<main id="main">
-			<section class="neon">
+			<section class="hero-slider">
 				<div class="container">
-					<p class="neon__text">будет не больно</p>
+					<div class="slider__inner">
+						<div class="slider__track">
+							<div class="slider__slide active">
+								<img src="images/MaskSlider.webp" alt="Кольня тату и кофе" />
+							</div>
+							<div class="slider__slide">
+								<img src="images/coffe2.webp" alt="Кольня тату и кофе" />
+							</div>
+							<div class="slider__slide">
+								<img src="images/studio/portfolio-studio (3).webp" alt="Кольня тату и кофе" />
+							</div>
+							<div class="slider__slide">
+								<img src="images/studio/portfolio-studio (4).webp" alt="Кольня тату и кофе" />
+							</div>
+							<div class="slider__slide">
+								<img src="images/studio/portfolio-studio (5).webp" alt="Кольня тату и кофе" />
+							</div>
+						</div>
+						<button class="slider__btn slider__btn--prev" aria-label="Назад">&#8249;</button>
+						<button class="slider__btn slider__btn--next" aria-label="Вперёд">&#8250;</button>
+						<div class="slider__dots">
+							<span class="slider__dot active"></span>
+							<span class="slider__dot"></span>
+							<span class="slider__dot"></span>
+							<span class="slider__dot"></span>
+							<span class="slider__dot"></span>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section id="studio" class="studio">
@@ -674,5 +704,6 @@
 		<script defer src="js/photo.js"></script>
 		<script defer src="js/burger.js"></script>
 		<script defer src="js/script.js"></script>
+		<script defer src="js/slider.js"></script>
 	</body>
 </html>

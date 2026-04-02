@@ -129,9 +129,19 @@ main > * {
 
 /* Скрывать только на страницах с неоном */
 .neon-page .header,
-.neon-page main > *:not(.neon) {
+.neon-page main > * {
 	opacity: 0;
 	transform: translateY(20px);
+}
+
+#neon-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	background: #171717;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .animation {
@@ -233,7 +243,92 @@ main > * {
 	text-transform: uppercase;
 	text-align: center;
 	color: var(--color-white);
-	z-index: -1;
+}
+
+/* Hero Slider */
+.hero-slider {
+	padding: 40px 0;
+}
+
+.slider__inner {
+	position: relative;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	background: #171717;
+}
+
+.slider__track {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.slider__slide {
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+	transition: opacity 0.8s ease;
+}
+
+.slider__slide.active {
+	opacity: 1;
+}
+
+.slider__slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
+}
+
+.slider__btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, 0.45);
+	color: #fff;
+	border: none;
+	font-size: 56px;
+	line-height: 1;
+	padding: 8px 20px;
+	cursor: pointer;
+	z-index: 10;
+	transition: background 0.3s ease;
+}
+
+.slider__btn:hover {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.slider__btn--prev {
+	left: 0;
+}
+
+.slider__btn--next {
+	right: 0;
+}
+
+.slider__dots {
+	position: absolute;
+	bottom: 14px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 10px;
+	z-index: 10;
+}
+
+.slider__dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.45);
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.slider__dot.active {
+	background: var(--color-yellow, #e6bc28);
 }
 
 .email__holder {

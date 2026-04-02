@@ -1,17 +1,16 @@
-if (document.querySelector('.neon__text')) {
-	// Блокируем клики на время анимации
+const overlay = document.getElementById('neon-overlay')
+
+if (overlay) {
 	document.body.classList.add('neon-page')
 
-	// Начальное состояние (GSAP, а не CSS)
-	gsap.set('.header, main > *:not(.neon)', {
+	gsap.set('.header, main > *', {
 		opacity: 0,
 		y: 20,
 		pointerEvents: 'none',
 	})
 
-	// ===== МИГАНИЕ НЕОНА =====
 	gsap.fromTo(
-		'.neon__text',
+		'#neon-overlay .neon__text',
 		{
 			opacity: 1,
 			textShadow: '0 0 10px #d538e1, 0 0 20px #d538e1, 0 0 40px #d538e1',
@@ -31,24 +30,29 @@ if (document.querySelector('.neon__text')) {
 	)
 
 	function showContent() {
-		// Постоянное свечение
-		gsap.to('.neon__text', {
+		gsap.to('#neon-overlay .neon__text', {
 			textShadow:
 				'0 0 10px #d538e1, 0 0 20px #d538e1, 0 0 40px #d538e1, 0 0 80px #d538e1, 0 0 160px #d538e1',
 			opacity: 1,
-			duration: 1,
-		})
-
-		// Появление контента
-		gsap.to('.header, main > *:not(.neon)', {
-			opacity: 1,
-			y: 0,
-			pointerEvents: 'auto', // 🔥 ВОЗВРАЩАЕМ КЛИКИ
-			duration: 1.2,
-			ease: 'power2.out',
-			stagger: 0.15,
+			duration: 0.8,
 			onComplete: () => {
-				document.body.classList.remove('neon-page')
+				gsap.to(overlay, {
+					opacity: 0,
+					duration: 1,
+					onComplete: () => {
+						overlay.remove()
+						document.body.classList.remove('neon-page')
+					},
+				})
+
+				gsap.to('.header, main > *', {
+					opacity: 1,
+					y: 0,
+					pointerEvents: 'auto',
+					duration: 1.2,
+					ease: 'power2.out',
+					stagger: 0.15,
+				})
 			},
 		})
 	}
