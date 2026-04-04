@@ -1304,6 +1304,10 @@ main > * {
 	overflow: visible;
 }
 
+.school__mob--top {
+	display: none;
+}
+
 .tort__school {
 	position: absolute;
 	top: -1113px;
@@ -1340,7 +1344,23 @@ main > * {
 }
 
 .school__video {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
 	margin-bottom: 45px;
+}
+
+.school__video--item {
+	position: relative;
+	aspect-ratio: 16 / 9;
+}
+
+.school__video--item iframe {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
 }
 
 .school__decs {

@@ -708,42 +708,75 @@
 		width: 242px;
 	}
 
-	.remove__text {
-		display: flex;
+	/* Аппарат виден на мобильном — колонка */
+	.content__remove {
 		flex-direction: column;
 		align-items: center;
 	}
 
+	.apparat__icon {
+		display: flex;
+		justify-content: center;
+		margin-right: 0;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+
+	.apparat__icon img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.apparat__icon::before {
+		display: none;
+	}
+
+	.remove__tatu {
+		margin-bottom: 60px;
+	}
+
+	.remove__text {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+
 	.remove__title {
 		font-size: 50px;
+		color: var(--color-black);
 	}
 
 	.remove__title::before {
-		right: 20px;
+		right: -74px;
 	}
 
 	.remove__title--text {
 		font-size: 50px;
+		color: var(--color-black);
 	}
 
 	.remove__title--text::before {
-		right: -40px;
+		right: -62px;
 		width: 300px;
 	}
 
 	.remove__btn {
 		box-shadow: none;
-		background-color: var(--color-black);
-		color: var(--color-white);
-		padding: 13px 30px;
+		background-color: var(--color-yellow);
+		color: var(--color-black);
+		padding: 16px 30px;
+		display: block;
+		text-align: center;
+		width: 100%;
 	}
 
 	.remove__text--magic {
-		color: var(--color-black);
+		color: var(--color-white);
 	}
 
 	.remove__li {
-		color: var(--color-black);
+		color: var(--color-white);
 		line-height: 200%;
 	}
 
@@ -826,13 +859,13 @@
 	}
 
 	.remove__tatu {
-		background-color: var(--color-yellow);
+		background-color: #1e1e1e;
 		padding: 20px;
 		border-radius: 20px;
 	}
 
 	.remove__item li::marker {
-		color: var(--color-black);
+		color: var(--color-yellow);
 	}
 	.reviews {
 		background-color: var(--color-black);
@@ -840,33 +873,201 @@
 		border-radius: 20px;
 	}
 
+	.apparat__icon::before {
+		display: none;
+	}
+
+	.apparat__icon {
+		background-image: url('../../icons/fon-apparet-mob.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center bottom;
+	}
+
 	.coffe {
-		background-color: var(--color-yellow);
+		background-color: #1e1e1e;
 		padding: 20px;
 		border-radius: 20px;
+	}
+
+	.coffe__svg {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.svg__content {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		order: -1;
+		height: auto;
+		margin-bottom: 20px;
+	}
+
+	.svg__cup {
+		position: static;
+		width: 140px;
+		height: auto;
+	}
+
+	.svg__bowl {
+		display: none;
+	}
+
+	.svg__tort {
+		position: absolute;
+		top: 407px;
+		right: -142px;
+		width: 100px;
+		height: auto;
+		z-index: -1;
+	}
+
+	.svg__content::before {
+		content: '';
+		position: absolute;
+		top: 80%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+		width: 348px;
+		height: 420px;
+		background-image: url(../../icons/fon-sparks-mob.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center center;
+		z-index: -1;
+	}
+
+	.title__coffe {
+		color: var(--color-white);
+	}
+
+	.coffe__title--yellow {
+		color: var(--color-yellow);
+	}
+
+	.coffe {
+		margin-bottom: 20px;
+	}
+
+	/* Текст описания */
+	.title__coffe--text {
+		color: var(--color-white);
+	}
+
+	.photo__small {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 8px;
+	}
+
+	.photo__small img {
+		height: 140px;
+	}
+
+	.photo__small img:last-child {
+		grid-column: span 2;
+		height: 180px;
+	}
+
+	.coffe__photo {
+		gap: 8px;
+	}
+
+	.photo__big img {
+		width: 100%;
+		border-radius: 4px;
 	}
 
 	.coffe__btn {
 		text-transform: uppercase;
 		display: block;
-		margin: 20px auto 0;
+		margin: 20px 0 0;
 		cursor: pointer;
 		font-weight: 700;
 		font-size: 16px;
-		line-height: 193%;
 		letter-spacing: 0.12em;
 		text-align: center;
-		color: var(--color-white);
-		padding: 13px 100px;
-		background-color: var(--color-black);
+		color: var(--color-black);
+		padding: 16px;
+		background-color: var(--color-white);
 		border-radius: 68px;
 		border: none;
+		width: 100%;
 	}
 
 	.school {
 		background-color: var(--color-black);
 		padding: 20px;
 		border-radius: 20px;
+		position: relative;
+	}
+
+	.school__fon::before {
+		display: block;
+		content: '';
+		position: absolute;
+		background-image: url('../../icons/fon-school-mob.svg');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: bottom center;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		pointer-events: none;
+	}
+
+	.school .container {
+		position: relative;
+		z-index: 1;
+	}
+
+	.school__video {
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+
+	.tort__svg {
+		display: none;
+	}
+
+	.school__mob--top {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+
+	.school__tort--mob {
+		width: 180px;
+		height: auto;
+	}
+
+	.school__text {
+		padding-top: 110px;
+		position: relative;
+	}
+
+	.school__fon--text {
+		position: absolute;
+		top: 15%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 65%;
+		height: auto;
+		pointer-events: none;
+		z-index: 0;
+	}
+
+	.school__btn {
+		margin-bottom: 100px;
+	}
+
+	.title__school {
+		position: relative;
+		z-index: 1;
 	}
 
 	.title__products::before {
@@ -882,8 +1083,9 @@
 		font-size: 15px;
 	}
 
-	.card img {
-		max-width: 150px;
+	.card {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.desk__btn {
@@ -920,6 +1122,23 @@
 		background-size: cover;
 		background-position: center 220px;
 		/* background-color: var(--color-yellow); */ /* страховка */
+	}
+
+	/* Отключаем все индивидуальные белые подложки */
+	.master__img--maksim::before,
+	.master__img--petrova::before,
+	.master__img--gamova::before,
+	.master__img--cat::before,
+	.master__img--grom::before {
+		display: none;
+	}
+
+	/* Один универсальный фон на каждую карточку */
+	.master__li {
+		background-image: url('../../icons/fon-maksim.svg');
+		background-repeat: no-repeat;
+		background-position: center 30px;
+		background-size: 280px 250px;
 	}
 
 	.master__li::after {
@@ -960,6 +1179,38 @@
 	/* Убираем жёлтый фон с самой карточки — он теперь на ul */
 	.master__li {
 		background-color: transparent;
+	}
+
+	.footer {
+		background-color: var(--color-yellow);
+		clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
+	}
+	.content__footer {
+		padding-top: 40px;
+	}
+	.title__footer {
+		color: var(--color-black);
+	}
+	.decs__footer {
+		color: var(--color-black);
+	}
+	.content__footer--title {
+		color: rgba(23, 23, 23, 0.3);
+	}
+	.footer__left--tell a {
+		color: var(--color-black);
+	}
+	.center__mail a {
+		color: var(--color-black);
+	}
+	.center__address a {
+		color: var(--color-black);
+	}
+	.footer__prava {
+		color: var(--color-black);
+	}
+	.docs-holder button {
+		color: var(--color-black);
 	}
 }
 
