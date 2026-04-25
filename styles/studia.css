@@ -1,5 +1,13 @@
 /* .master */
 
+.remove__tatu--title {
+	display: none;
+}
+
+.remove__button--mob {
+	display: none;
+}
+
 .remove__title--text::before {
 	right: -110px;
 }

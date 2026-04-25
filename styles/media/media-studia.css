@@ -12,7 +12,6 @@
 	}
 	.remove__tatu {
 		position: relative;
-		z-index: -1;
 	}
 	.header {
 		margin-top: 20px;
@@ -21,10 +20,10 @@
 		color: black;
 	}
 	.burger {
-		top: 15px;
+		top: -5px;
 	}
 	.navigation {
-		top: -15px;
+		top: -5px;
 	}
 }
 
@@ -64,10 +63,6 @@
 		display: none;
 	}
 
-	.reviews {
-		background-color: black;
-	}
-
 	.reviews__title {
 		font-size: 50px;
 	}
@@ -98,41 +93,247 @@
 		display: none;
 	}
 
+	/* Секция: тёмный фон */
+	.remove__tatu {
+		background-color: #1e1e1e;
+		border-radius: 20px;
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+
+	/* Заголовок "УДАЛЕНИЕ ТАТУ" */
+	.remove__tatu--title {
+		display: block;
+		font-family: 'Neusa';
+		font-weight: 700;
+		font-size: 40px;
+		text-transform: uppercase;
+		color: var(--color-white);
+		margin-bottom: 16px;
+		text-align: center;
+	}
+
+	.remove__li {
+		margin-bottom: 15px;
+	}
+
+	.remove__li:last-child {
+		margin-bottom: 0;
+	}
+
+	/* Колонка: текст → аппарат → кнопка */
+	.content__remove {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.remove__text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		order: 0;
+	}
+
+	/* Жёлтый бейдж "НАШ АППАРАТ" */
 	.content__title {
 		display: flex;
 		align-items: center;
+		justify-content: center;
+		background-color: var(--color-yellow);
+		padding: 8px 24px;
+		border-radius: 6px;
+		margin-bottom: 16px;
+		width: 100%;
 	}
 
 	.remove__title {
-		margin-right: 10px;
+		color: var(--color-black);
+		font-size: 36px;
+		margin-right: 8px;
 	}
 
-	.remove__tatu {
-		margin-bottom: 90px;
+	.remove__title::before {
+		display: none;
 	}
 
+	.remove__title--text {
+		color: var(--color-black);
+		font-size: 36px;
+	}
+
+	.remove__title--text::before {
+		display: none;
+	}
+
+	/* Белый текст */
 	.remove__text--magic {
-		margin-top: 20px;
+		color: var(--color-white);
+		text-align: center;
+		font-size: 14px;
+		margin-top: 0;
+		margin-bottom: 16px;
+	}
+
+	.remove__item {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.remove__li {
+		color: var(--color-white);
+	}
+
+	.remove__item li::marker {
+		color: var(--color-yellow);
+	}
+
+	/* Аппарат после текста */
+	.apparat__icon {
+		display: flex;
+		justify-content: center;
+		order: 1;
+		width: 100%;
+		margin-right: 0;
+		margin-top: 10px;
+		background-image: url('../../icons/fon-apparet-mob.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center bottom;
+	}
+
+	/* Десктопная кнопка скрыта, мобильная показана после аппарата */
+	.remove__button--desk {
+		display: none;
+	}
+
+	.remove__button--mob {
+		display: block;
+		order: 2;
+		width: 100%;
+	}
+
+	.remove__button--mob .remove__btn {
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+
+	.apparat__icon::before {
+		display: none;
+	}
+
+	.apparat__icon img {
+		max-width: 100%;
+		height: auto;
+		position: relative;
+		z-index: 1;
+	}
+
+	/* Кнопка жёлтая, на всю ширину */
+	.remove__btn {
+		background-color: var(--color-yellow);
+		color: var(--color-black);
+		width: 100%;
+		padding: 16px;
+		border-radius: 68px;
+		font-weight: 700;
+		font-size: 16px;
+		box-shadow: none;
+		border: none;
+		cursor: pointer;
+		display: block;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.remove__button .line {
+		display: none;
+	}
+
+	/* studio__master mobile */
+	.studio__master {
+		padding: 0;
+		overflow: hidden;
+		border-radius: 20px;
+		margin-bottom: 40px;
+	}
+
+	.studio__master .container {
+		padding: 0;
+	}
+
+	.content__studio {
+		flex-direction: column;
+
+		text-align: center;
+	}
+
+	.master__photo {
+		width: 100%;
+		height: 330px;
+		aspect-ratio: 349 / 524;
+		overflow: hidden;
+		margin-bottom: 0;
+		background-color: var(--color-yellow);
 	}
 
 	.master__photo img {
-		max-height: 300px;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center top;
+		display: block;
+		max-height: none;
 	}
 
-	.studio__master {
-		margin-bottom: 80px;
+	.text__studio {
+		padding: 0 20px 30px;
 	}
 
 	.studio__title {
-		font-size: 40px;
+		background-color: var(--color-black);
+		color: var(--color-white);
+		font-size: 32px;
+		padding: 14px 20px;
+		text-align: center;
+		width: 100%;
+		margin: 0 0 20px 0;
+		box-sizing: border-box;
+	}
+
+	.studio__title::before {
+		display: none;
 	}
 
 	.studio__desc {
-		font-size: 40px;
+		font-size: 36px;
+		color: var(--color-black);
+		text-align: center;
+		margin-bottom: 16px;
+		line-height: 110%;
 	}
 
-	.portfolio__studia--photo {
-		grid-template-columns: repeat(2, 1fr);
+	.students__desc--master {
+		font-size: 14px;
+		text-align: center;
+		margin-bottom: 24px;
+		color: var(--color-black);
+		line-height: 160%;
+	}
+
+	.seti__title {
+		font-family: 'Neusa';
+		font-weight: 700;
+		font-size: 28px;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 16px;
+		color: var(--color-black);
+	}
+
+	.soc__master {
+		justify-content: center;
+		gap: 20px;
 	}
 
 	.portfolio__studia {
@@ -152,10 +353,6 @@
 
 	.content__reviews {
 		padding: 60px 10px 30px 10px;
-	}
-
-	.studio__master {
-		padding: 20px 0 20px 0;
 	}
 
 	.portfolio__studia--photo {

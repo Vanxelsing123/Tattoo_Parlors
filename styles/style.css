@@ -153,6 +153,10 @@ main > * {
 	display: none;
 }
 
+.nav__logo--mob {
+	display: none;
+}
+
 .header {
 	position: relative;
 	margin-bottom: 30px;

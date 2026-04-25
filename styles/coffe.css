@@ -1,3 +1,15 @@
+.coffe__hero--title {
+	display: none;
+}
+
+.studio__photos--mob {
+	display: none;
+}
+
+.history__photos--mob {
+	display: none;
+}
+
 .menu {
 	margin-bottom: 100px;
 }
