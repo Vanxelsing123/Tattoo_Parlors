@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -14,7 +14,7 @@
 		<header class="header">
 			<div class="container">
 				<a class="header__logo" href="index.html">
-					<img src="icons/logo_3_white 1.svg" alt="Logo" />
+					<img src="icons/svg-adaptiv/logo_3_white.svg" alt="Logo" />
 				</a>
 				<div class="burger" aria-label="Меню" aria-expanded="false" role="button" tabindex="0">
 					<span></span>
@@ -73,10 +73,40 @@
 			</div>
 		</header>
 		<main>
+			<section class="history">
+				<div class="container">
+					<h1 class="coffe__hero--title">КОФЕЙНЯ</h1>
+					<div class="studio__content">
+						<div class="history__top">
+							<div class="history__text">
+								<h1 class="title__history"><span class="title__history--text">ИСТОРИЯ</span></h1>
+								<p class="text__studio--history">
+									Тату - студия "Кольня" - лучшее место, где делают татуировки и удаляют татуировки
+									лазером в Вологде. Приятная атмосфера, профессиональные мастера, полная
+									стерильность, индивидуальный подход к каждому клиенту.
+								</p>
+							</div>
+							<div class="history__img">
+								<img src="images/Rectangle 45.webp" alt="" class="studio__img" />
+								<img src="images/coffe-history.webp" alt="" class="studio__img" />
+							</div>
+						</div>
+						<div class="studio__photo">
+							<img src="images/Rectangle 47.webp" alt="" class="studio__img big-img" />
+							<img src="images/Rectangle 48.webp" alt="" class="studio__img small-bottom-img" />
+						</div>
+						<div class="history__photos--mob">
+							<img src="images/Rectangle 45.webp" alt="" />
+							<img src="images/coffe-history.webp" alt="" />
+							<img src="images/Rectangle 47.webp" alt="" />
+							<img src="images/Rectangle 48.webp" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="menu">
 				<div class="container">
 					<div class="menu__content">
-						<h1 class="coffe__hero--title">КОФЕЙНЯ</h1>
 						<h2 class="menu__title">МЕНЮ</h2>
 						<div class="menu__photo">
 							<div class="menu__cezon">
@@ -97,6 +127,7 @@
 					</div>
 				</div>
 			</section>
+
 			<section class="studio">
 				<div class="container">
 					<div class="studio__content">
@@ -142,43 +173,14 @@
 							<h2 class="studio__title desk__title">БАРИСТА</h2>
 							<span class="studio__desc">ДМИТРИЙ КАБЛУКОВ</span>
 							<p class="students__desc--master">
-								Мастер художественной татуировки. Елизавета практикуется уже больше 5 лет. Мастер
-								художественной татуировки. Елизавета практикуется уже больше 5 лет.
+								Бариста с опытом более 15 лет, самый известный кофевар нашего города всегда порадует
+								интересной историей и вкуснейшими авторскими напитками
 							</p>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="history">
-				<div class="container">
-					<div class="studio__content">
-						<div class="history__top">
-							<div class="history__text">
-								<h1 class="title__history"><span class="title__history--text">ИСТОРИЯ</span></h1>
-								<p class="text__studio--history">
-									Тату - студия "Кольня" - лучшее место, где делают татуировки и удаляют татуировки
-									лазером в Вологде. Приятная атмосфера, профессиональные мастера, полная
-									стерильность, индивидуальный подход к каждому клиенту.
-								</p>
-							</div>
-							<div class="history__img">
-								<img src="images/Rectangle 45.webp" alt="" class="studio__img" />
-								<img src="images/coffe-history.webp" alt="" class="studio__img" />
-							</div>
-						</div>
-						<div class="studio__photo">
-							<img src="images/Rectangle 47.webp" alt="" class="studio__img big-img" />
-							<img src="images/Rectangle 48.webp" alt="" class="studio__img small-bottom-img" />
-						</div>
-						<div class="history__photos--mob">
-							<img src="images/Rectangle 45.webp" alt="" />
-							<img src="images/coffe-history.webp" alt="" />
-							<img src="images/Rectangle 47.webp" alt="" />
-							<img src="images/Rectangle 48.webp" alt="" />
-						</div>
-					</div>
-				</div>
-			</section>
+
 			<section id="reviews" class="reviews">
 				<div class="container coffe__svg">
 					<div class="content__reviews">
@@ -303,9 +305,7 @@
 				<div class="content__footer">
 					<div class="footer__left">
 						<h2 class="title__footer">КОНТАКТЫ</h2>
-						<p class="decs__footer">
-							Мы доступны практически 24/7, пишите и звоните в любое время!
-						</p>
+
 						<div class="footer__left--tell">
 							<span class="content__footer--title">ТЕЛЕФОН</span>
 							<a href="tel:+89115012302">+8 (911) 501-23-02</a>
@@ -321,7 +321,7 @@
 							<div class="center__seti--svg">
 								<a href="https://www.instagram.com/kolnya_tattoo/" target="_blank" rel="noopener">
 									<picture>
-										<source media="(max-width: 1440px)" srcset="icons/svg-adaptiv/instagram.svg" />
+										<source media="(max-width: 1440px)" srcset="icons/Instagram.svg" />
 										<img src="icons/Instagram.svg" alt="Instagram" />
 									</picture>
 								</a>
@@ -346,10 +346,7 @@
 								</a>
 								<a href="https://t.me/kolnya" target="_blank" rel="noopener">
 									<picture>
-										<source
-											media="(max-width: 1440px)"
-											srcset="icons/svg-adaptiv/Telegram_logo_icon.svg"
-										/>
+										<source media="(max-width: 1440px)" srcset="icons/telegram.svg" />
 										<img src="icons/telegram.svg" alt="Instagram" />
 									</picture>
 								</a>

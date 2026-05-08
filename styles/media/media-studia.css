@@ -86,6 +86,9 @@
 	.portfolio__studia--photo {
 		grid-template-columns: repeat(3, 1fr);
 	}
+	.remove__text--magic {
+		display: none;
+	}
 }
 
 @media (max-width: 450px) {
