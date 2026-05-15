@@ -7,6 +7,10 @@
 		top: 0;
 	}
 
+	.history {
+		margin-top: 0;
+	}
+
 	.menu__title {
 		font-size: 50px;
 	}
@@ -315,10 +319,11 @@
 	.title__history {
 		color: var(--color-black);
 		text-align: center;
+		font-size: 38px;
 		background-image: url('../../icons/history-title.svg');
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size: 240px 65px;
+		background-size: 320px 65px;
 	}
 
 	.title__history::before {
