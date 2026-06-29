@@ -182,7 +182,7 @@ if (id && masters[id]) {
 	let worksHTML = `
 		<section class="works">
 			<div class="works__grid">
-				${m.works.map(src => `<img src="${src}" alt="">`).join('')}
+				${m.works.map((src, i) => `<img src="${src}" alt="Татуировка, работа мастера ${m.name}, фото ${i + 1}">`).join('')}
 			</div>
 		</section>
 	`

@@ -316,8 +316,8 @@
 .title__history::before {
 	content: '';
 	position: absolute;
-	background-image: url('../icons/history-title.svg');
-	width: 300px;
+	background-image: url('../icons/Rectangle 91.svg');
+	width: 460px;
 	height: 100%;
 	background-repeat: no-repeat;
 	z-index: -1;
@@ -389,8 +389,25 @@
 	border-radius: 10px;
 }
 
+.yandex-reviews {
+	width: 100%;
+
+	margin: 0 auto 40px;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+.badge {
+	width: 100%;
+}
+
 .reviews {
 	margin-top: 150px;
+}
+
+.badge {
+	min-width: 100%;
 }
 
 .coffe__svg::before {
@@ -415,7 +432,6 @@
 	padding: 200px 100px 100px 100px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 
 .text__reviews {

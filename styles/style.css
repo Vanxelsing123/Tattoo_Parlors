@@ -68,7 +68,8 @@ svg {
 
 @font-face {
 	font-family: 'Neusa';
-	src: url('../fonts/Neusa-Bold.woff2') format('woff2'),
+	src:
+		url('../fonts/Neusa-Bold.woff2') format('woff2'),
 		url('../fonts/Neusa-Bold.woff') format('woff');
 	font-style: normal;
 	font-weight: 700;
@@ -77,7 +78,8 @@ svg {
 
 @font-face {
 	font-family: 'Inter';
-	src: url('../fonts/InterRegular.woff2') format('woff2'),
+	src:
+		url('../fonts/InterRegular.woff2') format('woff2'),
 		url('../fonts/InterRegular.woff') format('woff');
 	font-style: normal;
 	font-weight: 400;
@@ -86,7 +88,8 @@ svg {
 
 @font-face {
 	font-family: 'Inter';
-	src: url('../fonts/InterMedium.woff2') format('woff2'),
+	src:
+		url('../fonts/InterMedium.woff2') format('woff2'),
 		url('../fonts/InterMedium.woff') format('woff');
 	font-style: normal;
 	font-weight: 500;
@@ -95,7 +98,9 @@ svg {
 
 @font-face {
 	font-family: 'Inter';
-	src: local('InterBold'), url('../fonts/Inter18pt-Bold.woff2') format('woff2'),
+	src:
+		local('InterBold'),
+		url('../fonts/Inter18pt-Bold.woff2') format('woff2'),
 		url('../fonts/Inter18pt-Bold.woff') format('woff');
 	font-style: normal;
 	font-weight: 700;
@@ -104,7 +109,9 @@ svg {
 
 @font-face {
 	font-family: 'Inter';
-	src: local('InterSemiBold'), url('../fonts/Inter18pt-SemiBold.woff2') format('woff2'),
+	src:
+		local('InterSemiBold'),
+		url('../fonts/Inter18pt-SemiBold.woff2') format('woff2'),
 		url('../fonts/Inter18pt-SemiBold.woff') format('woff');
 	font-style: normal;
 	font-weight: 600;
@@ -163,7 +170,10 @@ main > * {
 	margin-top: 30px;
 	width: 100%;
 	z-index: 1000;
-	transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+	transition:
+		background-color 0.3s ease,
+		box-shadow 0.3s ease,
+		transform 0.3s ease;
 }
 
 .header.scrolled {
@@ -227,7 +237,9 @@ main > * {
 	background-color: var(--color-yellow);
 	border-radius: 999px;
 	transform: translate(-50%, -50%) scale(0.8);
-	transition: transform 0.4s ease, opacity 0.4s ease;
+	transition:
+		transform 0.4s ease,
+		opacity 0.4s ease;
 	opacity: 0;
 	z-index: -1;
 }
@@ -256,7 +268,7 @@ main > * {
 
 .slider__inner {
 	position: relative;
-	aspect-ratio: 16 / 9;
+	aspect-ratio: 117 / 44;
 	overflow: hidden;
 	background: #171717;
 }
@@ -415,8 +427,15 @@ main > * {
 
 .studio__btn:hover {
 	color: #111;
-	text-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28;
-	box-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28, 0 0 80px #e5bc28;
+	text-shadow:
+		0 0 10px #e5bc28,
+		0 0 20px #e5bc28,
+		0 0 40px #e5bc28;
+	box-shadow:
+		0 0 10px #e5bc28,
+		0 0 20px #e5bc28,
+		0 0 40px #e5bc28,
+		0 0 80px #e5bc28;
 	transform: scale(1.05);
 }
 
@@ -1398,8 +1417,15 @@ main > * {
 
 .school__button:hover {
 	color: #111;
-	text-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28;
-	box-shadow: 0 0 10px #e5bc28, 0 0 20px #e5bc28, 0 0 40px #e5bc28, 0 0 80px #e5bc28;
+	text-shadow:
+		0 0 10px #e5bc28,
+		0 0 20px #e5bc28,
+		0 0 40px #e5bc28;
+	box-shadow:
+		0 0 10px #e5bc28,
+		0 0 20px #e5bc28,
+		0 0 40px #e5bc28,
+		0 0 80px #e5bc28;
 	transform: scale(1.05);
 }
 
@@ -1465,11 +1491,12 @@ main > * {
 .form {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 }
 
 .form input {
+	display: none;
 	margin-bottom: 20px;
 	width: 330px;
 	height: 60px;
@@ -1504,24 +1531,24 @@ main > * {
 
 .form__svg--topLeft {
 	position: absolute;
-	top: -370px;
+	top: -320px;
 }
 
 .form__svg--bottomLeft {
 	position: absolute;
-	top: -93px;
+	top: -65px;
 	left: 20px;
 }
 
 .form__svg--topRight {
 	position: absolute;
-	top: -433px;
+	top: -369px;
 	right: 445px;
 }
 
 .form__svg--bottomRight {
 	position: absolute;
-	top: -138px;
+	top: -80px;
 	right: 545px;
 }
 
@@ -1816,7 +1843,10 @@ main > * {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 	opacity: 0;
 	visibility: hidden;
-	transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+	transition:
+		opacity 0.3s ease,
+		visibility 0.3s ease,
+		transform 0.3s ease;
 	z-index: 999;
 }
 

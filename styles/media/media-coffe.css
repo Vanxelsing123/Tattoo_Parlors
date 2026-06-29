@@ -161,6 +161,9 @@
 		max-height: 230px;
 		width: 100%;
 	}
+	.content__reviews {
+		align-items: center;
+	}
 }
 
 @media (max-width: 450px) {
@@ -214,6 +217,13 @@
 
 	.content__reviews {
 		padding: 20px;
+	}
+
+	.yandex-reviews {
+		width: calc(100% + 80px);
+		max-width: calc(100% + 80px);
+		margin-left: -40px;
+		margin-right: -40px;
 	}
 	.photo__gradient {
 		display: none;
@@ -329,7 +339,7 @@
 		background-image: url('../../icons/history-title.svg');
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size: 320px 65px;
+		background-size: 320px 77px;
 	}
 
 	.title__history::before {
